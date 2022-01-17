@@ -1,0 +1,98 @@
+%-------------------------------------------------------------------%
+%
+% Konfigurasi dokumen LaTeX untuk laporan tesis IF ITB
+%
+% @author Petra Novandi
+%
+%-------------------------------------------------------------------%
+%
+% Berkas asli berasal dari Steven Lolong
+%
+%-------------------------------------------------------------------%
+
+% Ukuran kertas
+\special{papersize=210mm,297mm}
+
+% Setting margin
+\usepackage[top=3cm,bottom=3cm,left=4cm,right=3cm]{geometry}
+
+\usepackage{mathptmx}
+
+% Judul bahasa Indonesia
+\usepackage[bahasa]{babel}
+
+% Format citation
+\usepackage[backend=bibtex,citestyle=ieee]{biblatex}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage{blindtext}
+\usepackage{sectsty}
+\usepackage{chngcntr}
+\usepackage{etoolbox}
+\usepackage[bookmarks]{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}% Package untuk link di daftar isi.
+\usepackage{titlesec}       % Package Format judul
+\usepackage{parskip}
+\usepackage{ragged2e}		% Alignment
+\usepackage{multirow}		% Untuk bisa merge cell di tabel
+\usepackage{tikz}			% Untuk menggambar kotak pas foto
+\usepackage{setspace}		% Spacing paragraph
+\usepackage{fancyhdr}		% Agar nomor halaman di pojok kanan atas
+
+\fancypagestyle{plain}{%
+% 	\fancyhf{} % clear all header and footer fields
+% 	\fancyhead{} % clear all header fields
+% 	\fancyfoot{} % clear all footer fields
+% 	\rfoot{\thepage}%
+	\fancyfoot[R]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
+
+% Line satu setengah spasi
+\renewcommand{\baselinestretch}{1.5}
+
+% Setting judul
+\chapterfont{\centering \Large}
+\titleformat{\chapter}[display]
+  {\Large\centering\bfseries}
+  {\chaptertitlename\ \thechapter}{0pt}
+    {\Large\bfseries\uppercase}
+
+% Setting nomor pada subbsubsubbab
+\setcounter{secnumdepth}{3}
+
+\makeatletter
+
+\newcommand{\nim}[1]{\def\@nim{#1}}
+\newcommand{\printnim}{\@nim}
+
+% Command untuk Dosen Pembimbing I & II
+\newcommand{\namadosbinga}[1]{\def\@namadosbinga{#1}}
+\newcommand{\namadosbingb}[1]{\def\@namadosbingb{#1}}
+\newcommand{\nipdosbinga}[1]{\def\@nipdosbinga{#1}}
+\newcommand{\nipdosbingb}[1]{\def\@nipdosbingb{#1}}
+\newcommand{\printnamadosbinga}{\@namadosbinga}
+\newcommand{\printnamadosbingb}{\@namadosbingb}
+\newcommand{\printnipdosbinga}{\@nipdosbinga}
+\newcommand{\printnipdosbingb}{\@nipdosbingb}
+\newcommand{\dosbingA}[2]{\namadosbinga{#1} \nipdosbinga{#2}}
+\newcommand{\dosbingB}[2]{\namadosbingb{#1} \nipdosbingb{#2}}
+
+\makeatother
+
+% Counter untuk figure dan table.
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\renewcommand{\theHsection}{\thepart.section.\thesection}

@@ -1,0 +1,98 @@
+%--------------------------------------------------------------------%
+%
+% Template TA LaTeX Teknik Informatika ITERA.
+% Editor: Radhinka Bagaskara
+% Version 2022-0.1
+%
+% Berdasarkan "Templat LaTeX Tesis Informatika ITB" oleh Petra Barus & Peb Ruswono Aryan
+% https://github.com/petrabarus/if-itb-latex
+%--------------------------------------------------------------------%
+%
+% Berkas ini berisi struktur utama dokumen LaTeX yang akan dibuat.
+%
+%--------------------------------------------------------------------%
+
+\documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
+
+\input{config/if-itb-thesis.sty}
+
+\makeatletter
+
+\makeatother
+
+\bibliography{references}
+
+\begin{document}
+% 	\pagestyle{plain}
+% 	\fancyhf{}
+% 	\rfoot{Halaman \thepage}%
+
+    %Basic configuration
+    \title{Judul Tugas Akhir} 	% Judul Tugas Akhir
+    \date{20XX}					% Tahun Perancangan Tugas Akhir
+    \author{Nama Mahasiswa}		% Nama Mahasiswa
+	\nim{123456789}				% NIM Mahasiswa
+	\dosbingA%
+		{Nama dan Gelar Pembimbing I}%	% Nama Dosen Pembimbing 1
+		{NIP. 123456789}				% NIP Dosen Pembimbing 1
+	\dosbingB%
+		{Nama dan Gelar Pembimbing II}%	% Nama Dosen Pembimbing 2
+		{NIP. 123456789}				% NIP Dosen Pembimbing 2
+
+    \pagenumbering{roman}
+    \setcounter{page}{0}
+
+    \input{chapters/cover} % Hardcover
+    \phantomsection% 
+    \addcontentsline{toc}{chapter}{Halaman Judul}
+    \input{chapters/cover} % Softcover
+    \input{chapters/approval}
+    \input{chapters/statement}
+    \input{chapters/publication}
+
+    \input{chapters/abstract-id}
+    \input{chapters/abstract-en}
+    \input{chapters/motto}
+    \input{chapters/dedicated}
+    \input{chapters/forewords}
+
+    \titleformat*{\section}{\centering\bfseries\Large\MakeUpperCase}
+
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    \input{chapters/symbols}
+
+    %----------------------------------------------------------------%
+    % Konfigurasi Bab
+    %----------------------------------------------------------------%
+    \renewcommand{\chaptername}{BAB}
+    \renewcommand{\thechapter}{\arabic{chapter}}
+    %----------------------------------------------------------------%
+
+    %----------------------------------------------------------------%
+    % Daftar Bab
+    % Untuk menambahkan daftar bab, buat berkas bab misalnya `chapter-6` di direktori `chapters`, dan masukkan ke sini.
+    %----------------------------------------------------------------%
+    \justifying
+    \input{chapters/chapter-1}
+    \input{chapters/chapter-2}
+    \input{chapters/chapter-3}
+    \input{chapters/chapter-4}
+    \input{chapters/chapter-5}
+    %----------------------------------------------------------------%
+
+    % Daftar pustaka
+    \renewcommand{\bibname}{Daftar Pustaka}
+    \printbibliography
+
+    % Index
+    \appendix
+
+    \addcontentsline{toc}{part}{Lampiran}
+    \part*{Lampiran}
+
+    \input{chapters/appendix-1}
+    \input{chapters/appendix-2}
+
+\end{document}
