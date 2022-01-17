@@ -37,7 +37,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Dasar Teori}{3}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Subbab}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}Subbab}{4}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.1.1}Subsubbab}{4}{subsubsection.2.1.1.1}%
 \defcounter {refsection}{0}\relax 
