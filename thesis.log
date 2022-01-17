@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 10:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 10:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1150,7 +1150,7 @@ LaTeX Info: Redefining \nameref on input line 25.
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
- (chapters/cover.tex
+ (chapters/cover-hard.tex
 <resources/itera-logo.png, id=146, 114.9093pt x 139.722pt>
 File: resources/itera-logo.png Graphic file (type png)
 <use resources/itera-logo.png>
@@ -1163,10 +1163,10 @@ Non-PDF special ignored!
 <special> papersize=210mm,297mm
 
 {C:/Users/Radhinka/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./resourc
-es/itera-logo.png>]) (chapters/cover.tex
+es/itera-logo.png>]) (chapters/cover-soft.tex
 File: resources/itera-logo.png Graphic file (type png)
 <use resources/itera-logo.png>
-Package pdftex.def Info: resources/itera-logo.png  used on input line 9.
+Package pdftex.def Info: resources/itera-logo.png  used on input line 11.
 (pdftex.def)             Requested size: 58.49951pt x 71.13148pt.
  [1
 
@@ -1448,7 +1448,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 )
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 92.
+(blindtext)                 on input line 90.
 
 (chapters/chapter-3.tex [4 <./resources/chapter-2-infrastructure-diagram.png>]
 [5]
@@ -1464,7 +1464,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 )
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 93.
+(blindtext)                 on input line 91.
 
 (chapters/chapter-4.tex [6
 
@@ -1487,7 +1487,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 ])
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 94.
+(blindtext)                 on input line 92.
 
 (chapters/chapter-5.tex [9]
 BAB 5.
@@ -1498,7 +1498,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 )
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 95.
+(blindtext)                 on input line 93.
 
 [10
 
@@ -1530,11 +1530,11 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28274 strings out of 478659
- 547648 string characters out of 2844498
+ 28279 strings out of 478659
+ 547793 string characters out of 2844498
  979336 words of memory out of 3000000
- 45766 multiletter control sequences out of 15000+600000
- 423809 words of font info for 61 fonts, out of 8000000 for 9000
+ 45769 multiletter control sequences out of 15000+600000
+ 424887 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,22n,94p,1855b,1121s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
@@ -1542,7 +1542,7 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on thesis.pdf (29 pages, 350981 bytes).
+Output written on thesis.pdf (29 pages, 351022 bytes).
 PDF statistics:
  363 PDF objects out of 1000 (max. 8388607)
  80 named destinations out of 1000 (max. 500000)
