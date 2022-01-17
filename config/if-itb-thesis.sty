@@ -55,18 +55,18 @@
 	\fancyhead[R]{\thepage}
 }
 
-% Setting spacing di setiap judul chapter
-\titlespacing*{\chapter}{0pt}{-30pt}{20pt}
-
 % Line satu setengah spasi
 \renewcommand{\baselinestretch}{1.5}
 
 % Setting judul
-\chapterfont{\centering \Large}
+\chapterfont{\centering \large}
 \titleformat{\chapter}[display]
-  {\Large\centering\bfseries}
+  {\large\centering\bfseries}
   {\chaptertitlename\ \thechapter}{0pt}
-    {\Large\bfseries\uppercase}
+    {\large\bfseries\uppercase}
+
+% Setting spacing di setiap judul chapter
+\titlespacing*{\chapter}{0pt}{-30pt}{20pt}
 
 % Setting nomor pada subbsubsubbab
 \setcounter{secnumdepth}{3}
