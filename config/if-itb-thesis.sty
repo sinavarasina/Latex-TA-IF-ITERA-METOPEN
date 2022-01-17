@@ -60,10 +60,14 @@
 
 % Setting judul
 \chapterfont{\centering \large}
-\titleformat{\chapter}[display]
-  {\large\centering\bfseries}
-  {\chaptertitlename\ \thechapter}{0pt}
-    {\large\bfseries\uppercase}
+\titleformat{\chapter}[display]%
+  	{\large\centering\bfseries}%
+  	{\chaptertitlename\ \thechapter}{0pt}%
+  	{\large\bfseries\uppercase}
+\titleformat{\section}%
+	{\normalfont\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}%
+	{\normalfont\normalsize\bfseries}{\thesubsection}{1em}{}
     
 % Setting spacing di setiap judul chapter
 \titlespacing*{\chapter}{0pt}{-30pt}{20pt}
@@ -106,7 +110,6 @@
 	\renewcommand{\listfigurename}{DAFTAR GAMBAR}%
 	\renewcommand{\listtablename}{DAFTAR TABEL}%
 }
-
 
 % Saya lupa ini buat apa (Radhinka)
 %\renewcommand{\theHsection}{\thepart.section.\thesection}
