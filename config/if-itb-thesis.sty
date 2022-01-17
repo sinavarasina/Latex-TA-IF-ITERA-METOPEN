@@ -55,9 +55,6 @@
 	\fancyhead[R]{\thepage}
 }
 
-% Setting spacing di setiap judul chapter
-\titlespacing*{\chapter}{0pt}{-30pt}{20pt}
-
 % Line satu setengah spasi
 \renewcommand{\baselinestretch}{1.5}
 
@@ -67,6 +64,9 @@
   {\large\centering\bfseries}
   {\chaptertitlename\ \thechapter}{0pt}
     {\large\bfseries\uppercase}
+    
+% Setting spacing di setiap judul chapter
+\titlespacing*{\chapter}{0pt}{-30pt}{20pt}
 
 % Setting nomor pada subbsubsubbab
 \setcounter{secnumdepth}{3}
@@ -99,6 +99,14 @@
 
 % Setting penomoran caption gambar
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+
+% Mengkapitalkan judul Daftar Isi, Gambar, & Tabel
+\addto\captionsbahasa{%
+	\renewcommand{\contentsname}{DAFTAR ISI}%
+	\renewcommand{\listfigurename}{DAFTAR GAMBAR}%
+	\renewcommand{\listtablename}{DAFTAR TABEL}%
+}
+
 
 % Saya lupa ini buat apa (Radhinka)
 %\renewcommand{\theHsection}{\thepart.section.\thesection}

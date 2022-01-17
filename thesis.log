@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1533,7 +1533,7 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 Here is how much of TeX's memory you used:
  28278 strings out of 478659
  547445 string characters out of 2844498
- 981353 words of memory out of 3000000
+ 981377 words of memory out of 3000000
  45769 multiletter control sequences out of 15000+600000
  423302 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1543,7 +1543,7 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on thesis.pdf (28 pages, 350465 bytes).
+Output written on thesis.pdf (28 pages, 350492 bytes).
 PDF statistics:
  364 PDF objects out of 1000 (max. 8388607)
  80 named destinations out of 1000 (max. 500000)
