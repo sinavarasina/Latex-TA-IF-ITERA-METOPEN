@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 10:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1434,7 +1434,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 21.
 
-<resources/chapter-2-infrastructure-diagram.png, id=288, 702.625pt x 406.51875p
+<resources/chapter-2-infrastructure-diagram.png, id=281, 702.625pt x 406.51875p
 t>
 File: resources/chapter-2-infrastructure-diagram.png Graphic file (type png)
 <use resources/chapter-2-infrastructure-diagram.png>
@@ -1523,110 +1523,28 @@ Lampiran B.
 ) [14
 
 ] (thesis.aux)
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: EB87AAF94EEDA0FC266D54DEE42263F2;4554
-(rerunfilecheck)             After:  0A75F5A2947171D236CC1322AFF905CD;4540.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: E3D6508F119E3F9C1A6E948ADDBE5F9F;4369.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28300 strings out of 478659
- 548230 string characters out of 2844498
- 979336 words of memory out of 3000000
+ 28281 strings out of 478659
+ 547475 string characters out of 2844498
+ 979346 words of memory out of 3000000
  45770 multiletter control sequences out of 15000+600000
  424887 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,22n,94p,1855b,1121s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-pdfTeX warning (dest): name{figure..section.II.1.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.V.2} has been referenced but does 
-not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.V.1} has been referenced but does 
-not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.IV.4} has been referenced but does
- not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.IV.3} has been referenced but does
- not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.IV.2} has been referenced but does
- not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.IV.1} has been referenced but does
- not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.III.3} has been referenced but doe
-s not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.III.2} has been referenced but doe
-s not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.III.1} has been referenced but doe
-s not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.II.2} has been referenced but does
- not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection..section.II.1.1} has been referenced but
- does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.II.1} has been referenced but does
- not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.I.6} has been referenced but does 
-not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.I.5} has been referenced but does 
-not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.I.4} has been referenced but does 
-not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.I.3} has been referenced but does 
-not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.I.2} has been referenced but does 
-not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{section..section.I.1} has been referenced but does 
-not exist, replaced by a fixed one
-
-{C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C
-:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb
-><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.
-pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on thesis.pdf (29 pages, 353641 bytes).
+{C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+<C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.p
+fb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
+a.pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
+mri8a.pfb>
+Output written on thesis.pdf (29 pages, 351030 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 

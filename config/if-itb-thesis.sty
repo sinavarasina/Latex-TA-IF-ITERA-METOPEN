@@ -69,11 +69,11 @@
 \setcounter{secnumdepth}{3}
 
 \makeatletter
-
+% Command untuk variabel NIM
 \newcommand{\nim}[1]{\def\@nim{#1}}
 \newcommand{\printnim}{\@nim}
 
-% Command untuk Dosen Pembimbing I & II
+% Command untuk variabel Dosen Pembimbing I & II
 \newcommand{\namadosbinga}[1]{\def\@namadosbinga{#1}}
 \newcommand{\namadosbingb}[1]{\def\@namadosbingb{#1}}
 \newcommand{\nipdosbinga}[1]{\def\@nipdosbinga{#1}}
@@ -91,6 +91,12 @@
 \counterwithin{figure}{section}
 \counterwithin{table}{section}
 
+% Supaya tidak ada garis di header
 \renewcommand{\headrulewidth}{0pt}
 
-\renewcommand{\theHsection}{\thepart.section.\thesection}
+% Setting penomoran caption gambar
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+
+% Saya lupa ini buat apa (Radhinka)
+%\renewcommand{\theHsection}{\thepart.section.\thesection}
+
