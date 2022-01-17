@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 10:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 15:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1427,20 +1427,21 @@ Package blindtext Warning: bahasa not defined, using English instead.
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 14.
 
-[3
-
-]
 
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 21.
 
-<resources/chapter-2-infrastructure-diagram.png, id=281, 702.625pt x 406.51875p
+[3
+
+]
+<resources/chapter-2-infrastructure-diagram.png, id=282, 702.625pt x 406.51875p
 t>
 File: resources/chapter-2-infrastructure-diagram.png Graphic file (type png)
 <use resources/chapter-2-infrastructure-diagram.png>
 Package pdftex.def Info: resources/chapter-2-infrastructure-diagram.png  used o
 n input line 24.
 (pdftex.def)             Requested size: 318.67209pt x 184.37703pt.
+
 
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 31.
@@ -1468,7 +1469,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 
 (chapters/chapter-4.tex [6
 
-] [7]
+]
 BAB IV.
 
 Package blindtext Warning: bahasa not defined, using English instead.
@@ -1482,14 +1483,14 @@ Package blindtext Warning: bahasa not defined, using English instead.
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 11.
 
-[8
-
-])
+)
 
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 93.
 
-(chapters/chapter-5.tex [9]
+(chapters/chapter-5.tex [7
+
+] [8]
 BAB V.
 
 Package blindtext Warning: bahasa not defined, using English instead.
@@ -1500,7 +1501,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 94.
 
-[10
+[9
 
 ]
 
@@ -1510,17 +1511,17 @@ Package biblatex Warning: Using fallback definition for \mkbibdatelong.
 (biblatex)                loaded, is faulty or does not contain a definition
 (biblatex)                for \mkbibdatelong.
 
-[11
+[10
 
-] [12
+] [11
 
 ] (chapters/appendix-1.tex
 Lampiran A.
-) (chapters/appendix-2.tex [13
+) (chapters/appendix-2.tex [12
 
 ]
 Lampiran B.
-) [14
+) [13
 
 ] (thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
@@ -1530,9 +1531,9 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28281 strings out of 478659
- 547475 string characters out of 2844498
- 979346 words of memory out of 3000000
+ 28280 strings out of 478659
+ 547468 string characters out of 2844498
+ 981353 words of memory out of 3000000
  45770 multiletter control sequences out of 15000+600000
  424887 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1542,9 +1543,9 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on thesis.pdf (29 pages, 351494 bytes).
+Output written on thesis.pdf (28 pages, 350262 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
+ 364 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
