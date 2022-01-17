@@ -65,7 +65,12 @@
     % Konfigurasi Bab
     %----------------------------------------------------------------%
     \renewcommand{\chaptername}{BAB}
-    \renewcommand{\thechapter}{\arabic{chapter}}
+    % Bab: Arabic
+    \renewcommand{\thechapter}{\Roman{chapter}}
+    % Sub-bab: Roman
+%    \renewcommand\thesection{\Roman{section}}
+%    % Sub-sub-bab: Arabic
+%    \renewcommand\thesubsection{\thesection.\arabic{subsection}}
     
     % Setting supaya nomor halaman pertama dengan "chapter"
     % berada di tengah bawah
@@ -81,10 +86,6 @@
     % Daftar Bab
     % Untuk menambahkan daftar bab, buat berkas bab misalnya `chapter-6` di direktori `chapters`, dan masukkan ke sini.
     %----------------------------------------------------------------%
-    
-    
-    
-    
     \justifying
     \input{chapters/chapter-1}
     \input{chapters/chapter-2}

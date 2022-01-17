@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 10:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 10:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1408,11 +1408,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-BAB 1.
+BAB I.
 [1
 
 ]) (chapters/chapter-2.tex [2]
-BAB 2.
+BAB II.
 
 Overfull \hbox (0.87321pt too wide) in paragraph at lines 7--8
 []\OT1/ptm/m/n/12 memberikan pe-ma-ham-an yang se-cu-kup-nya ke-pa-da pem-ba-ca
@@ -1448,11 +1448,11 @@ Package blindtext Warning: bahasa not defined, using English instead.
 )
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 90.
+(blindtext)                 on input line 91.
 
 (chapters/chapter-3.tex [4 <./resources/chapter-2-infrastructure-diagram.png>]
 [5]
-BAB 3.
+BAB III.
 
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 5.
@@ -1464,12 +1464,12 @@ Package blindtext Warning: bahasa not defined, using English instead.
 )
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 91.
+(blindtext)                 on input line 92.
 
 (chapters/chapter-4.tex [6
 
 ] [7]
-BAB 4.
+BAB IV.
 
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 5.
@@ -1487,10 +1487,10 @@ Package blindtext Warning: bahasa not defined, using English instead.
 ])
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 92.
+(blindtext)                 on input line 93.
 
 (chapters/chapter-5.tex [9]
-BAB 5.
+BAB V.
 
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 5.
@@ -1498,7 +1498,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 )
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 93.
+(blindtext)                 on input line 94.
 
 [10
 
@@ -1524,14 +1524,14 @@ Lampiran B.
 
 ] (thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 0A75F5A2947171D236CC1322AFF905CD;4540.
+(rerunfilecheck)             Checksum: EB87AAF94EEDA0FC266D54DEE42263F2;4554.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  28281 strings out of 478659
- 547817 string characters out of 2844498
+ 547845 string characters out of 2844498
  979336 words of memory out of 3000000
  45770 multiletter control sequences out of 15000+600000
  424887 words of font info for 62 fonts, out of 8000000 for 9000
@@ -1542,7 +1542,7 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on thesis.pdf (29 pages, 351626 bytes).
+Output written on thesis.pdf (29 pages, 351739 bytes).
 PDF statistics:
  368 PDF objects out of 1000 (max. 8388607)
  81 named destinations out of 1000 (max. 500000)
