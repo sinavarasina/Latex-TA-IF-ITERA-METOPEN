@@ -1,23 +1,23 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {bahasa}{}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Halaman Judul}{i}{section*.1}%
+\contentsline {chapter}{Halaman Judul}{i}{section*.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Lembar Pengesahan}{ii}{section*.2}%
+\contentsline {chapter}{Lembar Pengesahan}{ii}{section*.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Halaman Pernyataan Orisinalitas}{iii}{section*.3}%
+\contentsline {chapter}{Halaman Pernyataan Orisinalitas}{iii}{section*.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Halaman Persetujuan Publikasi}{iv}{section*.4}%
+\contentsline {chapter}{Halaman Persetujuan Publikasi}{iv}{section*.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abstrak}{v}{section*.5}%
+\contentsline {chapter}{Abstrak}{v}{section*.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abstract}{vi}{section*.6}%
+\contentsline {chapter}{Abstract}{vi}{section*.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Motto}{vii}{section*.7}%
+\contentsline {chapter}{Motto}{vii}{section*.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Persembahan}{viii}{section*.8}%
+\contentsline {chapter}{Persembahan}{viii}{section*.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Kata Pengantar}{ix}{section*.9}%
+\contentsline {chapter}{Kata Pengantar}{ix}{section*.11}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {I}Pendahuluan}{1}{chapter.1}%
 \defcounter {refsection}{0}\relax 
@@ -67,9 +67,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Saran}{9}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Daftar Pustaka}{9}{section*.14}%
+\contentsline {chapter}{Daftar Pustaka}{9}{section*.18}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Lampiran}{10}{chapter*.15}%
+\contentsline {part}{Lampiran}{10}{chapter*.19}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Instrumen Pengujian}{12}{appendix.A}%
 \defcounter {refsection}{0}\relax 

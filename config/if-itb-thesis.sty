@@ -46,6 +46,7 @@
 \usepackage{tikz}			% Untuk menggambar kotak pas foto
 \usepackage{setspace}		% Spacing paragraph
 \usepackage{fancyhdr}		% Agar nomor halaman di pojok kanan atas
+\usepackage{caption} 		% Caption gambar & tabel
 
 % Setting supaya nomor halaman pertama dengan "chapter"
 % berada di kanan atas
@@ -103,6 +104,9 @@
 
 % Setting penomoran caption gambar
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+
+% Setting penomoran caption tabel
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{figure}}
 
 % Mengkapitalkan judul Daftar Isi, Gambar, & Tabel
 \addto\captionsbahasa{%

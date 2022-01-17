@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -992,13 +992,31 @@ rs
 \f@nch@O@erf=\skip99
 \f@nch@O@olf=\skip100
 \f@nch@O@orf=\skip101
+)
+(C:\Users\Radhinka\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(C:\Users\Radhinka\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen266
+\captionmargin@=\dimen267
+\captionwidth=\dimen268
+\caption@tempdima=\dimen269
+\caption@indent=\dimen270
+\caption@parindent=\dimen271
+\caption@hangindent=\dimen272
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count443
+\c@continuedfloat=\count444
+Package caption Info: hyperref package is loaded.
 ))
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count443
-\@quotereset=\count444
+\@quotelevel=\count445
+\@quotereset=\count446
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
 5.
 (C:\Users\Radhinka\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
@@ -1007,7 +1025,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 (C:\Users\Radhinka\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
 pdftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count445
+\l__color_backend_stack_int=\count447
 \l__pdf_internal_box=\box62
 ) (thesis.aux)
 \openout1 = `thesis.aux'.
@@ -1065,7 +1083,7 @@ LaTeX Font Info:    ... okay on input line 25.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\big@size=\dimen266
+\big@size=\dimen273
 Package biblatex Info: Trying to load language 'bahasa'...
 Package biblatex Info: ... file 'bahasa.lbx' not found.
 
@@ -1106,16 +1124,16 @@ Package biblatex Info: Reference segment=0 on input line 25.
 (C:\Users\Radhinka\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
 .mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count446
-\scratchdimen=\dimen267
+\scratchcounter=\count448
+\scratchdimen=\dimen274
 \scratchbox=\box63
-\nofMPsegments=\count447
-\nofMParguments=\count448
+\nofMPsegments=\count449
+\nofMParguments=\count450
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count449
-\MPscratchDim=\dimen268
-\MPnumerator=\count450
-\makeMPintoPDFobject=\count451
+\MPscratchCnt=\count451
+\MPscratchDim=\dimen275
+\MPnumerator=\count452
+\makeMPintoPDFobject=\count453
 \everyMPtoPDFconversion=\toks34
 )
 (C:\Users\Radhinka\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopd
@@ -1141,7 +1159,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 titlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count452
+\c@section@level=\count454
 )
 LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
@@ -1150,6 +1168,8 @@ LaTeX Info: Redefining \nameref on input line 25.
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
  (chapters/cover-hard.tex
 <resources/itera-logo.png, id=150, 114.9093pt x 139.722pt>
 File: resources/itera-logo.png Graphic file (type png)
@@ -1202,7 +1222,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
-<figure/samplephoto.jpg, id=164, 85.2786pt x 113.7048pt>
+<figure/samplephoto.jpg, id=166, 85.2786pt x 113.7048pt>
 File: figure/samplephoto.jpg Graphic file (type jpg)
 <use figure/samplephoto.jpg>
 Package pdftex.def Info: figure/samplephoto.jpg  used on input line 29.
@@ -1425,31 +1445,28 @@ Package blindtext Warning: bahasa not defined, using English instead.
 
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 14.
+(blindtext)                 on input line 19.
 
-
-Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 21.
-
-[3
-
-]
-<resources/chapter-2-infrastructure-diagram.png, id=282, 702.625pt x 406.51875p
+<resources/chapter-2-infrastructure-diagram.png, id=278, 702.625pt x 406.51875p
 t>
 File: resources/chapter-2-infrastructure-diagram.png Graphic file (type png)
 <use resources/chapter-2-infrastructure-diagram.png>
 Package pdftex.def Info: resources/chapter-2-infrastructure-diagram.png  used o
-n input line 24.
+n input line 22.
 (pdftex.def)             Requested size: 318.67209pt x 184.37703pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 31.
+(blindtext)                 on input line 30.
 
-)
+[3
+
+])
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 89.
+(blindtext)                 on input line 87.
 
 (chapters/chapter-3.tex [4 <./resources/chapter-2-infrastructure-diagram.png>]
 [5]
@@ -1465,7 +1482,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 )
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 90.
+(blindtext)                 on input line 88.
 
 (chapters/chapter-4.tex [6
 
@@ -1486,7 +1503,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 )
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 91.
+(blindtext)                 on input line 89.
 
 (chapters/chapter-5.tex [7
 
@@ -1499,7 +1516,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 )
 
 Package blindtext Warning: bahasa not defined, using English instead.
-(blindtext)                 on input line 92.
+(blindtext)                 on input line 90.
 
 [9
 
@@ -1525,16 +1542,16 @@ Lampiran B.
 
 ] (thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E3D6508F119E3F9C1A6E948ADDBE5F9F;4369.
+(rerunfilecheck)             Checksum: E6A6EA5D8EAA5EDEDD5C0B5B8C0C173A;4371.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28275 strings out of 478659
- 547409 string characters out of 2844498
- 981351 words of memory out of 3000000
- 45767 multiletter control sequences out of 15000+600000
+ 29497 strings out of 478659
+ 571771 string characters out of 2844498
+ 1003686 words of memory out of 3000000
+ 46980 multiletter control sequences out of 15000+600000
  421676 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,22n,94p,1855b,1121s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1543,9 +1560,9 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on thesis.pdf (28 pages, 350310 bytes).
+Output written on thesis.pdf (28 pages, 351381 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
  316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
