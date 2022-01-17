@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 10:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.1.14)  17 JAN 2022 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1151,7 +1151,7 @@ LaTeX Info: Redefining \nameref on input line 25.
 \openout5 = `thesis.out'.
 
  (chapters/cover-hard.tex
-<resources/itera-logo.png, id=146, 114.9093pt x 139.722pt>
+<resources/itera-logo.png, id=150, 114.9093pt x 139.722pt>
 File: resources/itera-logo.png Graphic file (type png)
 <use resources/itera-logo.png>
 Package pdftex.def Info: resources/itera-logo.png  used on input line 9.
@@ -1202,7 +1202,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
-<figure/samplephoto.jpg, id=160, 85.2786pt x 113.7048pt>
+<figure/samplephoto.jpg, id=164, 85.2786pt x 113.7048pt>
 File: figure/samplephoto.jpg Graphic file (type jpg)
 <use figure/samplephoto.jpg>
 Package pdftex.def Info: figure/samplephoto.jpg  used on input line 29.
@@ -1434,7 +1434,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 21.
 
-<resources/chapter-2-infrastructure-diagram.png, id=276, 702.625pt x 406.51875p
+<resources/chapter-2-infrastructure-diagram.png, id=281, 702.625pt x 406.51875p
 t>
 File: resources/chapter-2-infrastructure-diagram.png Graphic file (type png)
 <use resources/chapter-2-infrastructure-diagram.png>
@@ -1524,16 +1524,16 @@ Lampiran B.
 
 ] (thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 72B0A3C6DDDD5EA26BEC025CF686D7D1;4421.
+(rerunfilecheck)             Checksum: 0A75F5A2947171D236CC1322AFF905CD;4540.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28279 strings out of 478659
- 547793 string characters out of 2844498
+ 28281 strings out of 478659
+ 547817 string characters out of 2844498
  979336 words of memory out of 3000000
- 45769 multiletter control sequences out of 15000+600000
+ 45770 multiletter control sequences out of 15000+600000
  424887 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,22n,94p,1855b,1121s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1542,9 +1542,9 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on thesis.pdf (29 pages, 351022 bytes).
+Output written on thesis.pdf (29 pages, 351626 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 

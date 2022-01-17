@@ -67,7 +67,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.2}Saran}{10}{section..section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Lampiran}{11}{chapter*.14}%
+\contentsline {chapter}{Daftar Pustaka}{10}{section*.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{Lampiran}{11}{chapter*.15}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Instrumen Pengujian}{13}{appendix.A}%
 \defcounter {refsection}{0}\relax 
