@@ -11,9 +11,9 @@
 	\normalsize \bfseries \MakeUppercase{Lembar Pengesahan} \linebreak
     
     \normalsize \normalfont \onehalfspacing \justify{
-    Tugas Akhir Sarjana dengan judul \thetitle \ adalah benar dibuat oleh saya sendiri dan belum pernah dibuat dan diserahkan sebelumnya, baik sebagian ataupun seluruhnya, baik oleh saya ataupun orang lain, baik di Institut Teknologi Sumatera maupun di institusi pendidikan lainnya.}
+    Tugas Akhir Sarjana dengan judul \textbf{\thetitle} \ adalah benar dibuat oleh saya sendiri dan belum pernah dibuat dan diserahkan sebelumnya, baik sebagian ataupun seluruhnya, baik oleh saya ataupun orang lain, baik di Institut Teknologi Sumatera maupun di institusi pendidikan lainnya.}
 
-	Lampung Selatan, tgl-bln-thn
+	Lampung Selatan, \today{} % TODO: automatic date
 
 	\setlength{\tabcolsep}{0pt}
 %	\begin{tabular}{l@{\hskip 0.5in}r}
@@ -37,16 +37,17 @@
 	\vfill
 
 	\centering Diperiksa dan disetujui oleh,
+	\vspace{2em} % add space
 	\justify
     \setlength{\tabcolsep}{0pt}
     \begin{tabular}{p{0.5\textwidth}p{0.5\textwidth}}
-        Pembimbing I, & Pembimbing II, \\
+        \multicolumn{1}{c}{Pembimbing I,} & \multicolumn{1}{c}{Pembimbing II,} \\
         & \\
         & \\
         & \\
         & \\
-       	\underline{\printnamadosbinga} & \underline{\printnamadosbingb} \\
-       	\printnipdosbinga & \printnipdosbingb \\
+		\multicolumn{1}{c}{\underline{\printnamadosbinga}} & \multicolumn{1}{c}{\underline{\printnamadosbingb}} \\
+		\multicolumn{1}{c}{\printnipdosbinga} & \multicolumn{1}{c}{\printnipdosbingb} \\
     \end{tabular}
 	\vfill
 
@@ -61,7 +62,7 @@
 		\\
 		\\
 		\\
-		\underline{Ir. Hira Laksmiwati Soemitro, M.Sc.} \\
+		\underline{Ir. Hira Laksmiwati Soemitro, M.Sc.} \\ % TODO: make automatic
 		NIP 123456789 \\
 	\end{tabular}
 	
