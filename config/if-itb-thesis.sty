@@ -17,7 +17,8 @@
 \usepackage[top=3cm,bottom=3cm,left=3.5cm,right=3cm]{geometry}
 
 % Font
-\usepackage{mathptmx} % Times New Roman itu copyright dari Microsoft. Ini alternatifnya (RDB)
+\usepackage{mathptmx} 
+% Times New Roman itu copyright dari Microsoft. Ini alternatifnya (RDB)
 
 % Judul bahasa Indonesia
 \usepackage[bahasa]{babel}
@@ -39,7 +40,9 @@
     filecolor=black,
     linkcolor=black,
     urlcolor=black
-}% Package untuk link di daftar isi.
+}
+
+% Package untuk link di daftar isi.
 \usepackage{titlesec}       % Package Format judul
 \usepackage{parskip}
 \usepackage{ragged2e}		% Alignment
@@ -93,6 +96,18 @@
 \newcommand{\printnipdosbingb}{\@nipdosbingb}
 \newcommand{\dosbingA}[2]{\namadosbinga{#1} \nipdosbinga{#2}}
 \newcommand{\dosbingB}[2]{\namadosbingb{#1} \nipdosbingb{#2}}
+
+% Command untuk variabel Dosen Penguji I & II
+\newcommand{\namapengujia}[1]{\def\@namapengujia{#1}}
+\newcommand{\namapengujib}[1]{\def\@namapengujib{#1}}
+\newcommand{\nippengujia}[1]{\def\@nippengujia{#1}}
+\newcommand{\nippengujib}[1]{\def\@nippengujib{#1}}
+\newcommand{\printnamapengujia}{\@namapengujia}
+\newcommand{\printnamapengujib}{\@namapengujib}
+\newcommand{\printnipdpengujia}{\@nippengujia}
+\newcommand{\printnippengujib}{\@nippengujib}
+\newcommand{\pengujiA}[2]{\namapengujia{#1} \nippengujia{#2}}
+\newcommand{\pengujiB}[2]{\namapengujib{#1} \nippengujib{#2}}
 
 \makeatother
 
