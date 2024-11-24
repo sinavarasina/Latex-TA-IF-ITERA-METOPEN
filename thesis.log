@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.11.24)  24 NOV 2024 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.11.24)  24 NOV 2024 20:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1217,10 +1217,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 <figure/samplephoto.jpg, id=157, 85.2786pt x 113.7048pt>
 File: figure/samplephoto.jpg Graphic file (type jpg)
 <use figure/samplephoto.jpg>
-Package pdftex.def Info: figure/samplephoto.jpg  used on input line 29.
+Package pdftex.def Info: figure/samplephoto.jpg  used on input line 30.
 (pdftex.def)             Requested size: 94.88817pt x 126.52437pt.
 
-Overfull \vbox (37.35362pt too high) detected at line 29
+Overfull \vbox (37.35362pt too high) detected at line 30
  []
 
 
@@ -1540,7 +1540,7 @@ Here is how much of TeX's memory you used:
 fb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on thesis.pdf (27 pages, 349860 bytes).
+Output written on thesis.pdf (27 pages, 349825 bytes).
 PDF statistics:
  358 PDF objects out of 1000 (max. 8388607)
  80 named destinations out of 1000 (max. 500000)
