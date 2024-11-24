@@ -17,20 +17,16 @@
 
 	\setlength{\tabcolsep}{0pt}
 %	\begin{tabular}{l@{\hskip 0.5in}r}
-	\begin{tabular}{p{0.7\textwidth}p{0.3\textwidth}}
+	\begin{tabular}{p{0.7\textwidth} p{0.3\textwidth}}
 		Lampung Selatan, \today{} & \multirow{6}{*}{ % TODO: automatic date
 			% Kotak pasfoto 3x4
+			\phantom{--------} % Amazing hack biar kotaknya ke kanan (RDB)
 			\begin{tikzpicture}
-				\draw rectangle (3cm,4cm) node[pos=1]{
-%					{\begin{tabular}{l}
-%						\includegraphics[width=.23\textwidth]{figure/samplephoto.jpg}
-%					\end{tabular}}
-					
-				};
+				\draw rectangle (3cm,4cm) node[pos=0.5] {Foto 3x4};
 			\end{tikzpicture}
+
 		}\\
 		Penulis, \\
-		& \\
 		& \\
 		& \\
 		& \\
@@ -66,7 +62,7 @@
 		\\
 		\\
 		\\
-		\underline{Ir. Hira Laksmiwati Soemitro, M.Sc.} \\ % TODO: make automatic
+		Ir. Hira Laksmiwati Soemitro, M.Sc. \\ % TODO: make automatic
 		NIP 123456789 \\
 	\end{tabular}
 	
