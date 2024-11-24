@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.11.24)  24 NOV 2024 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2024.11.24)  24 NOV 2024 20:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1176,7 +1176,7 @@ File: resources/itera-logo.png Graphic file (type png)
 <use resources/itera-logo.png>
 Package pdftex.def Info: resources/itera-logo.png  used on input line 25.
 (pdftex.def)             Requested size: 142.26378pt x 172.98697pt.
- [0
+ [1
 
 
 Non-PDF special ignored!
@@ -1214,13 +1214,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
-<figure/samplephoto.jpg, id=157, 85.2786pt x 113.7048pt>
-File: figure/samplephoto.jpg Graphic file (type jpg)
-<use figure/samplephoto.jpg>
-Package pdftex.def Info: figure/samplephoto.jpg  used on input line 30.
-(pdftex.def)             Requested size: 94.88817pt x 126.52437pt.
 
-Overfull \vbox (37.35362pt too high) detected at line 30
+Overfull \vbox (15.4423pt too high) detected at line 31
  []
 
 
@@ -1231,10 +1226,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[1
+[2
 
 
- <./figure/samplephoto.jpg>]) (chapters/statement.tex
+]) (chapters/statement.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1243,7 +1238,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2
+[3
 
 
 ]) (chapters/publication.tex
@@ -1259,7 +1254,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3
+[4
 
 
 ]) (chapters/abstract-id.tex
@@ -1279,7 +1274,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4
+[5
 
 
 ]) (chapters/abstract-en.tex
@@ -1299,7 +1294,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5
+[6
 
 
 ]) (chapters/motto.tex
@@ -1315,7 +1310,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6
+[7
 
 
 ]) (chapters/dedicated.tex
@@ -1331,7 +1326,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7
+[8
 
 
 ]) (chapters/forewords.tex
@@ -1343,7 +1338,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8
+[9
 
 
 ]) (thesis.toc
@@ -1355,7 +1350,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9
+[10
 
 
 ])
@@ -1371,7 +1366,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10] (thesis.lof)
+[11] (thesis.lof)
 \tf@lof=\write7
 \openout7 = `thesis.lof'.
 
@@ -1384,7 +1379,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11
+[12
 
 ] (thesis.lot)
 \tf@lot=\write8
@@ -1399,7 +1394,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12
+[13
 
 ]) (chapters/chapter-1.tex
 
@@ -1410,7 +1405,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13
+[14
 
 
 ]
@@ -1427,7 +1422,7 @@ Package blindtext Warning: bahasa not defined, using English instead.
 Package blindtext Warning: bahasa not defined, using English instead.
 (blindtext)                 on input line 19.
 
-<resources/chapter-2-infrastructure-diagram.png, id=268, 702.625pt x 406.51875p
+<resources/chapter-2-infrastructure-diagram.png, id=267, 702.625pt x 406.51875p
 t>
 File: resources/chapter-2-infrastructure-diagram.png Graphic file (type png)
 <use resources/chapter-2-infrastructure-diagram.png>
@@ -1528,21 +1523,21 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29497 strings out of 478659
- 571626 string characters out of 2844497
+ 29488 strings out of 478659
+ 571440 string characters out of 2844497
  1003701 words of memory out of 3000000
- 46984 multiletter control sequences out of 15000+600000
+ 46978 multiletter control sequences out of 15000+600000
  424887 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,22n,94p,1855b,1121s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 93i,16n,94p,1855b,1121s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 <C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.p
 fb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Radhinka/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on thesis.pdf (27 pages, 349825 bytes).
+Output written on thesis.pdf (27 pages, 264277 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
+ 357 PDF objects out of 1000 (max. 8388607)
  80 named destinations out of 1000 (max. 500000)
- 308 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 303 words of extra memory for PDF output out of 10000 (max. 10000000)
 
