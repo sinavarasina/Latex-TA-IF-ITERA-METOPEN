@@ -18,6 +18,7 @@
 \usepackage{sectsty}
 \usepackage{chngcntr}
 \usepackage{etoolbox}
+\usepackage{array}
 \usepackage[bookmarks]{hyperref}
 \hypersetup{
 	colorlinks,
@@ -104,6 +105,8 @@
 	\renewcommand{\listtablename}{DAFTAR TABEL}%
 }
 
+% Untuk mengganti nama bulan di babel bahasa
+% tapi belum jalan (RDB)
 \StartBabelCommands*{bahasa}{date}
 \SetStringLoop{month#1name}{%
 	Januari,Februari,Maret,April,Mei,Juni,%
@@ -142,7 +145,7 @@
 \newcommand{\nippengujib}[1]{\def\@nippengujib{#1}}
 \newcommand{\printnamapengujia}{\@namapengujia}
 \newcommand{\printnamapengujib}{\@namapengujib}
-\newcommand{\printnipdpengujia}{\@nippengujia}
+\newcommand{\printnippengujia}{\@nippengujia}
 \newcommand{\printnippengujib}{\@nippengujib}
 \newcommand{\pengujiA}[2]{\namapengujia{#1} \nippengujia{#2}}
 \newcommand{\pengujiB}[2]{\namapengujib{#1} \nippengujib{#2}}
