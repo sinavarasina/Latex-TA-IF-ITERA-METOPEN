@@ -11,6 +11,7 @@
 %
 %-------------------------------------------------------------------%
 
+% Import package penting
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{titling}
@@ -103,6 +104,16 @@
 
 % Setting penomoran caption tabel
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{figure}}
+
+% Setting penomoran caption persamaan
+\usepackage{tocloft}
+\newcommand{\listequationsname}{DAFTAR PERSAMAAN}
+\newlistof{myequations}{equ}{\listequationsname}
+\newcommand{\myequations}[1]{
+	\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}
+}
+\setlength{\cftmyequationsnumwidth}{2.3em}
+\setlength{\cftmyequationsindent}{1.5em}
 
 % Mengkapitalkan judul Daftar Isi, Gambar, & Tabel
 \addto\captionsbahasa{%
