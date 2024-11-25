@@ -3,7 +3,7 @@
 % Konfigurasi dokumen LaTeX untuk laporan tesis IF ITB
 % 
 %
-% @author Radhinka Bagaskara, Petra Novandi
+% @author Radhinka Bagaskara, Petra Novandi (ITB)
 %
 %-------------------------------------------------------------------%
 %
@@ -28,11 +28,16 @@
 	urlcolor=black
 }
 
-% Ukuran kertas
+% Ukuran kertas A4
 \special{papersize=210mm,297mm}
 
 % Setting margin
 \usepackage[top=3cm,bottom=3cm,left=3.5cm,right=3cm]{geometry}
+
+% Setting indensasi
+\usepackage{parskip}
+\setlength{\parindent}{20pt}
+\setlength{\parskip}{10pt}
 
 % Font
 %\usepackage{mathptmx} 
@@ -42,6 +47,7 @@
 % Judul bahasa Indonesia
 \usepackage[bahasa]{babel}
 
+% Format tanggal
 \usepackage[style=ddmmyyyy,datesep=-]{datetime2}
 
 % Format citation
