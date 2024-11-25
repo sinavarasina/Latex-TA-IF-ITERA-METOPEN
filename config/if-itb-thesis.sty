@@ -20,6 +20,7 @@
 \usepackage{chngcntr}
 \usepackage{etoolbox}
 \usepackage{array}
+\usepackage{float}
 \usepackage[bookmarks]{hyperref}
 \hypersetup{
 	colorlinks,
@@ -43,6 +44,9 @@
 
 % Linespacing 1.5. Tidak serupa dengan 1.5 di Word (RDB)
 \renewcommand{\baselinestretch}{1.5}
+
+% Agar tidak ada kata yang terpotong setiap baris kalimat
+\hyphenpenalty=10000
 
 % Font
 %\usepackage{mathptmx} 
