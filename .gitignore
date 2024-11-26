@@ -4,3 +4,10 @@
 *.fls
 *.log
 *.synctex.gz
+thesis-blx.bib
+thesis.bbl
+thesis.lof
+thesis.lot
+thesis.out
+thesis.run.xml
+thesis.toc
