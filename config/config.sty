@@ -16,12 +16,13 @@
 \usepackage{graphicx}
 \usepackage{titling}
 \usepackage{blindtext} % Untuk lorem ipsum
-\usepackage{sectsty}
-\usepackage{chngcntr}
-\usepackage{etoolbox}
-\usepackage{array}
+\usepackage{sectsty} % Untuk header & judul
+\usepackage{chngcntr} % Untuk penambahan nomor caption
+\usepackage{etoolbox} % Untuk CRUD variabel (?)
+\usepackage{array} % % Untuk tabel di math mode
 \usepackage{float} % Untuk tabular
-\usepackage{longtable}
+\usepackage{longtable} % Untuk tabel yang potong halaman
+\usepackage{amsmath} % Untuk equation
 \usepackage[bookmarks]{hyperref}
 \hypersetup{
 	colorlinks,
@@ -113,7 +114,7 @@
 
 % Setting spasi antar persamaan
 % TODO: Cari cara buat ngurangin spasi antar persamaan
-\usepackage{amsmath}
+
 
 % Setting penomoran caption persamaan
 \usepackage{tocloft}
@@ -148,7 +149,8 @@
 % Saya lupa ini buat apa (RDB)
 %\renewcommand{\theHsection}{\thepart.section.\thesection}
 
-\makeatletter
+% Semua dibawah ini berhubungan dengan CRUD variabel (ada simbol @)
+\makeatletter % Jangan dihapus
 
 % Command untuk variabel NIM
 \newcommand{\nim}[1]{\def\@nim{#1}}
@@ -178,5 +180,12 @@
 \newcommand{\pengujiA}[2]{\namapengujia{#1} \nippengujia{#2}}
 \newcommand{\pengujiB}[2]{\namapengujib{#1} \nippengujib{#2}}
 
-\makeatother
+\g@addto@macro\normalsize{%
+	\setlength\abovedisplayskip{-10pt}
+	\setlength\belowdisplayskip{-10pt}
+	\setlength\abovedisplayshortskip{-10pt}
+	\setlength\belowdisplayshortskip{-10pt}
+}
+
+\makeatother % Jangan dihapus
 
