@@ -127,19 +127,20 @@
     \input{chapters/chapter-5}
     %----------------------------------------------------------------%
 
-    % Daftar pustaka
-    \renewcommand{\bibname}{Daftar Pustaka}
+    % Daftar Pustaka
+    \newpage
     \phantomsection% 
     \addcontentsline{toc}{chapter}{Daftar Pustaka}
-    \printbibliography
+    \printbibliography[title={Daftar Pustaka}]
 
     % Lampiran
-    % TODO: Rapihin lampiran
-    \clearpage
+    % TODO: Tabel Lampiran
+    \newpage
     \appendix
-    \addcontentsline{toc}{part}{Lampiran}
+    \addcontentsline{toc}{chapter}{Lampiran}
     \chapter*{Lampiran}
+    \renewcommand\thesection{\Alph{section}}
     \input{chapters/appendix-1}
-    \input{chapters/appendix-2}
+%    \input{chapters/appendix-2}
 
 \end{document}
