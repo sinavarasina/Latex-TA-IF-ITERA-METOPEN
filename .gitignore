@@ -11,3 +11,5 @@ thesis.lot
 thesis.out
 thesis.run.xml
 thesis.toc
+.DS_Store
+chapters/.DS_Store
