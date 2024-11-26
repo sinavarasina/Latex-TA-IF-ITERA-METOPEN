@@ -29,6 +29,8 @@ Kemudian penulis sebaiknya melakukan rangkuman terutama terkait dengan peluang p
 \section{Dasar Teori} \label{II.Teori}
 Berisi teori / konsep yang berkaitan / digunakan dalam tugas akhir yang dikerjakan. Gunakanlah data melalui buku/jurnal referensi, publikasi tugas akhir, penelitian, buku, dan informasi web yang dapat dipertanggungjawabkan, hindari penggunaan dasar teori melalui tautan Wikipedia, surat kabar, atau portal berita, yang dapat memiliki isi yang tidak bersifat fakta. \par
 
+Berikut adalah contoh penyisipan tabel menggunakan \verb|\begin{longtable}{}|: \par
+
 \begin{longtable}{|c|c|c|c|}
 	\caption{Contoh Tabel}
 	\label{table:2.contoh}\\
@@ -51,7 +53,9 @@ Berisi teori / konsep yang berkaitan / digunakan dalam tugas akhir yang dikerjak
 \subsection{Subbab 1} \label{II.Subbab1}
 Deskripsikan mengenai teori / konsep yang berkaitan / digunakan / menjadi acuan dalam penelitian. Kemudian berikan pembahasan sederhana mengenai penggunaannya di dalam tugas akhir yang Anda kerjakan. \par
 
-\begin{figure}[h]
+Berikut adalah contoh penyisipan gambar menggunakan \verb|\begin{figure}[H]|:
+
+\begin{figure}[H] % Kalau menggunakan H, posisi gambar akan tepat dibawah teks
     \centering
     \includegraphics[width=0.8\textwidth]{figure/chapter-2-infrastructure-diagram.png}
     \caption{Contoh gambar}
@@ -62,8 +66,15 @@ Deskripsikan mengenai teori / konsep yang berkaitan / digunakan / menjadi acuan 
 
 Berikut adalah contoh subsubbab. Ini adalah level subbab maksimal dalam laporan Tugas Akhir, dan tidak boleh lebih dalam.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=3cm]{figure/samplephoto.jpg}
+	\caption{Contoh foto}
+	\label{fig:2.foto}
+\end{figure}
+
 \subsection{Subbab 2} \label{II.Subbab2}
-Untuk membuat sebuah persamaan, gunakan kode dibawah: \par
+Untuk membuat sebuah persamaan, gunakan kode \verb|\begin{equation}| dibawah: \par
 
 \begin{equation}
 	x + 1 = 2
@@ -79,6 +90,11 @@ Berikut adalah contoh penulisan persamaan yang lebih kompleks, yaitu persamaan d
 \label{eq:2.normal}
 \myequations{Distribusi normal}
 
-Jika 
+Jika menuliskan banyak persamaan secara berurutan, gunakan  \verb|\begin{align}| atau \verb|\begin{gather}|: \par
 
-Jika 
+\begin{align} 
+	2x - 5y &=  8 \\ 
+	3x + 9y &=  -12
+\end{align}
+\label{eq:2.SPL}
+\myequations{Sistem persamaan linier}
