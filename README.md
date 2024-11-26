@@ -1,12 +1,13 @@
 # Latex-TA-IF-ITERA
 Template Latex Tugas Akhir untuk Program Studi Teknik Informatika, ITERA
+
 Oleh Tim Dosen Prodi Teknik Informatika ITERA
 
-Berdasarkan "Templat LaTeX Tesis Informatika ITB" oleh Petra Barus & Peb Ruswono Aryan (https://github.com/petrabarus/if-itb-latex)
+![Screenshot LaTex dari TeXstudio](ss.jpg)
 
 ## Apakah ini?
 
-Proyek ini adalah proyek untuk membuat template Tugas Akhir Teknik Informatika ITERA berbasis Latex. Template dibuat berdasarkan template [Microsoft Word Tugas Akhir Informatika ITERA](https://drive.google.com/file/d/1ZGk0GzCovn7iPYFXfmmWPUmS1PqBW1Ml/view).
+Proyek ini adalah proyek untuk membuat template Tugas Akhir Teknik Informatika ITERA berbasis Latex. Template dibuat berdasarkan template [Microsoft Word Tugas Akhir Informatika ITERA](https://drive.google.com/file/d/1ZGk0GzCovn7iPYFXfmmWPUmS1PqBW1Ml/view), serta berdasarkan [Templat LaTeX Tesis Informatika ITB](https://github.com/petrabarus/if-itb-latex) oleh Petra Barus & Peb Ruswono Aryan.
 
 ## Bagaimana cara menggunakannya?
 
