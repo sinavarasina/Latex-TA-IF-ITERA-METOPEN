@@ -3,7 +3,7 @@
 % Konfigurasi dokumen LaTeX untuk laporan tesis IF ITB
 % 
 %
-% @author Radhinka Bagaskara, Petra Novandi (ITB)
+% @author Radhinka Bagaskara, Martin C.T. Manullang, Petra Novandi (ITB)
 %
 %-------------------------------------------------------------------%
 %
@@ -112,6 +112,29 @@
 
 % Setting penomoran caption tabel
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+
+% Setting daftar isi, daftar gambar, daftar tabel, daftar rumus
+\usepackage[titles]{tocloft}
+\setlength{\cftbeforechapskip}{5.2pt}
+\cftsetindents{section}{1.5em}{2.3em}
+\cftsetindents{subsection}{3em}{3em}
+\setlength{\cfttabindent}{1.5em}
+\setlength{\cftfigindent}{1.5em}
+
+% Tambahkan kata "BAB" sebelum nomor bab di daftar isi
+\renewcommand*\cftchappresnum{\MakeUppercase{BAB}~}
+\renewcommand\chaptername{BAB}
+\settowidth{\cftchapnumwidth}{\cftchappresnum}
+\renewcommand{\cftchapaftersnumb}{\quad}
+\addtocontents{toc}{
+	\protect\renewcommand*\protect\cftchappresnum{\MakeUppercase{\chaptername}~}
+}
+
+\renewcommand{\cftchapleader}{\dotfill} 
+\renewcommand{\cftsecleader}{\dotfill}
+\renewcommand{\cftsubsecleader}{\dotfill}
+\renewcommand{\cftfigleader}{\dotfill}
+\renewcommand{\cfttableader}{\dotfill}
 
 % Setting penomoran caption persamaan
 \usepackage{tocloft}
