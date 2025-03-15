@@ -40,7 +40,7 @@
 % Setting margin
 \usepackage[top=3cm,bottom=3cm,left=3.5cm,right=3cm]{geometry}
 
-% Setting indensasi
+% Setting indensasi (untuk halaman-halaman awal sebelum Bab I-V)
 \usepackage{indentfirst}
 \usepackage{parskip}
 \setlength{\parindent}{20pt}
@@ -82,15 +82,15 @@
 
 % Package untuk link di daftar isi.
 \usepackage{titlesec}       % Package Format judul
-\usepackage{parskip}
 \usepackage{ragged2e}		% Alignment
 \usepackage{multirow}		% Untuk bisa merge cell di tabel
 \usepackage{tikz}			% Untuk menggambar kotak pas foto
 \usepackage{setspace}		% Spacing paragraph
 \usepackage{fancyhdr}		% Agar nomor halaman di pojok kanan atas
-\usepackage{caption} 		% Caption gambar & tabel
-\usepackage[titles]{tocloft}% Tipografi untuk halaman Daftar
-% Untuk suatu sebab, judul Daftar jadi di tengah & fontnya kecil?? (RDB)
+\usepackage[figurewithin=none, tablewithin=none]{caption} 		% Caption gambar & tabel
+% Item di Daftar tabel, gambar, dan rumus harusnya tidak ada spasi jika
+% berada di bab yg berbeda2
+\usepackage[titles]{tocloft}% Tipografi untuk halaman Daftar. judul Daftar jadi di tengah & fontnya kecil
 
 % Setting supaya nomor halaman pertama dengan "chapter"
 % berada di kanan atas
@@ -100,11 +100,11 @@
 	\fancyhead[R]{\thepage}
 }
 
-% Setting judul
+% Setting posisi & spasi judul
 \chapterfont{\centering \large}
 \titleformat{\chapter}[display]%
 {\large\centering\bfseries}%
-{\chaptertitlename\ \thechapter}{0pt}%
+{\chaptertitlename\ \thechapter}{-3pt}% % Setting spasi antara "Bab" & "Judul Bab"
 {\large\bfseries\uppercase}
 \titleformat{\section}%
 {\normalfont\normalsize\bfseries}{\thesection}{1em}{}
@@ -127,7 +127,7 @@
 % Setting penomoran caption gambar, tabel, dan rumus
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
-\renewcommand\theequation{\arabic{section}.\arabic{equation}}
+\renewcommand\theequation{\arabic{chapter}.\arabic{equation}}
 
 % Setting spasi list di daftar isi, daftar gambar, daftar tabel, daftar rumus
 \setlength{\cftbeforechapskip}{5.2pt}
