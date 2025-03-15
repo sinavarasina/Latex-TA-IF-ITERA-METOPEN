@@ -88,9 +88,10 @@
 \usepackage{tikz}			% Untuk menggambar kotak pas foto
 \usepackage{setspace}		% Spacing paragraph
 \usepackage{fancyhdr}		% Agar nomor halaman di pojok kanan atas
-\usepackage{caption} 		% Caption gambar & tabel
-\usepackage[titles]{tocloft}% Tipografi untuk halaman Daftar
-% Untuk suatu sebab, judul Daftar jadi di tengah & fontnya kecil?? (RDB)
+\usepackage[figurewithin=none, tablewithin=none]{caption} 		% Caption gambar & tabel
+% Item di Daftar tabel, gambar, dan rumus harusnya tidak ada spasi jika
+% berada di bab yg berbeda2
+\usepackage[titles]{tocloft}% Tipografi untuk halaman Daftar. judul Daftar jadi di tengah & fontnya kecil
 
 % Setting supaya nomor halaman pertama dengan "chapter"
 % berada di kanan atas
