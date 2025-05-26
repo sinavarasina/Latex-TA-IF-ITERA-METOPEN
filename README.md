@@ -17,6 +17,6 @@ Template dapat didownload dengan mengakses halaman [release](https://github.com/
 
 Template dapat dibuka & dicompile menggunakan editor seperti [TeXstudio](https://www.texstudio.org/) atau [Overleaf](https://www.overleaf.com). Template secara teknis diedit & diuji menggunakan TeXstudio.
 
-## Versi A4 atau A5?
+## Mengapa ada dua jenis ukuran kertas dalam template ini?
 
-Per Mei 2025, ITERA mengubah ukuran kertas Tugas Akhir dari A4 menjadi A5. Template ini sudah disesuaikan dengan ukuran A5. Untuk ukuran A4, silakan gunakan folder [Template TA 2025 - Versi A4](Template%20TA%202025%20-%20Versi%20A4).
+Per Mei 2025, ITERA mengubah standar ukuran kertas Tugas Akhir dari A4 menjadi UNESCO (155 x 230 mm). Template ini sudah disesuaikan dengan ukuran UNESCO. Untuk ukuran A4, silakan gunakan folder [Template TA 2025 - Versi A4](Template%20TA%202025%20-%20Versi%20A4).
