@@ -1,7 +1,7 @@
 # Latex-TA-IF-ITERA
 Template Latex Tugas Akhir untuk Program Studi Teknik Informatika, ITERA
 
-Oleh Tim Dosen Prodi Teknik Informatika ITERA
+Editor: Radhinka Bagaskara, Martin C.T. Manullang, I Wayan Wiprayoga Wisesa
 
 ![Screenshot LaTex dari TeXstudio](ss.jpg)
 
@@ -17,3 +17,6 @@ Template dapat didownload dengan mengakses halaman [release](https://github.com/
 
 Template dapat dibuka & dicompile menggunakan editor seperti [TeXstudio](https://www.texstudio.org/) atau [Overleaf](https://www.overleaf.com). Template secara teknis diedit & diuji menggunakan TeXstudio.
 
+## Versi A4 atau A5?
+
+Per Mei 2025, ITERA mengubah ukuran kertas Tugas Akhir dari A4 menjadi A5. Template ini sudah disesuaikan dengan ukuran A5. Untuk ukuran A4, silakan gunakan folder [Template TA 2025 - Versi A4](Template%20TA%202025%20-%20Versi%20A4).

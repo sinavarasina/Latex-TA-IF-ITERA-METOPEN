@@ -9,7 +9,7 @@ Dataset yang digunakan pada penelitian ini merupakan dataset PURE.
 \section{Akuisisi Gambar} \label{IV.Akuisisi}
 Pada tahap ini, proses pembacaan dataset dilakukan dengan seksama untuk memastikan setiap gambar diperoleh dengan urutan yang benar dan sistematis. Penting untuk memastikan bahwa gambar yang diperoleh terurut dalam format \textit{time-series} agar memudahkan analisis pergerakan wajah yang terjadi dalam video. Implementasi kode yang digunakan untuk proses ini dapat dilihat pada \cref{code:4.akuisisi}. \par
 
-\begin{lstlisting}[language=Python, caption={Akuisisi Gambar}, label={code:4.akuisisi}, basicstyle=\ttfamily\scriptsize, commentstyle=\color{green}, keywordstyle=\color{blue}, stringstyle=\color{red}, numberstyle=\tiny\color{gray}, numbers=left, breaklines=true, showstringspaces=false]
+\begin{lstlisting}[caption={Akuisisi Gambar}, label={code:4.akuisisi}, basicstyle=\ttfamily\scriptsize]
 DATASET_ROOT = os.path.join(os.getcwd(), 'PURE Dataset')
 def get_all_dataset_folders(root_path):
     dataset_folders = []

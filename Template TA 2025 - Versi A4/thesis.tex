@@ -3,8 +3,7 @@
 %
 % Template TA LaTeX Teknik Informatika ITERA.
 % Editor: Radhinka Bagaskara, Martin C.T. Manullang, iwawiwi
-% Version 2025.1
-% TELAH DISESUAIKAN DENGAN FORMAT PERPUSTAKAAN ITERA MEI 2025 (UNESCO FORMAT)
+% Version 2024.1
 %
 % Berdasarkan "Templat LaTeX Tesis Informatika ITB" oleh Petra Barus & Peb Ruswono Aryan
 % https://github.com/petrabarus/if-itb-latex
@@ -15,8 +14,8 @@
 %--------------------------------------------------------------------%
 
 % Set jenis dokumen Tugas Akhir
-%\documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
- \documentclass[11pt, a5paper, onecolumn, final]{report} % Untuk versi perpustakaan
+\documentclass[12pt, a4paper, onecolumn, oneside, final]{report}
+% \documentclass[11pt, a5paper, onecolumn, final]{report} % Untuk versi perpustakaan
 
 \input{config/config.sty}
 % \input{config/config_perpus.sty} % Untuk versi perpustakaan
@@ -63,19 +62,12 @@
 
     \input{chapters/cover-hard} % Hardcover
    \input{chapters/approval} % Lembar Pengesahan
-    % Ganti margin & aktifkan twoside mulai dari sini
-    \clearpage
-    \newgeometry{
-        top=2cm,
-        bottom=2cm,
-        left=2cm,
-        right=2cm,
-        includefoot,
-        heightrounded,
-        bindingoffset=0.5cm,
-        twoside
-    }
-    \pagestyle{alternatingstyle}
+
+
+
+
+
+
    \input{chapters/statement} % Halaman Pernyataan Orisinalitas
    \input{chapters/publication} % Halaman Persetujuan Publikasi
    \input{chapters/forewords} % Kata Pengantar
@@ -144,10 +136,6 @@
     %----------------------------------------------------------------%
     \justifying
     \input{chapters/chapter-1}
-    % Mulai selang-seling halaman
-    \forceoddpage
-    \cleardoublepage
-    \pagestyle{alternatingstyle}
     \input{chapters/chapter-2}
     \input{chapters/chapter-3}
     \input{chapters/chapter-4}
