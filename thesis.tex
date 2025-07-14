@@ -65,20 +65,20 @@
 
 	\input{chapters/cover-hard} % Hardcover
    	\input{chapters/approval} % Lembar Pengesahan
-    % Ganti margin & aktifkan twoside mulai dari sini 
-    % (RDB: Butuh klarifikasi)
-%    \clearpage
-%    % \newgeometry{
-%    %     top=2cm,
-%    %     bottom=2cm,
-%    %     left=2cm,
-%    %     right=2cm,
-%    %     includefoot,
-%    %     heightrounded,
-%    %     bindingoffset=0.5cm,
-%    %     twoside
-%    % }
-%    \pagestyle{alternatingstyle}
+    
+    % Ganti margin & aktifkan twoside mulai dari sini (Ardoni)
+    \clearpage
+	\newgeometry{
+		top=2cm,
+		bottom=2cm,
+		left=2cm,
+		right=2cm,
+		includefoot,
+		heightrounded,
+		bindingoffset=0.5cm,
+		twoside
+	}
+    \pagestyle{alternatingstyle}
 	\input{chapters/statement} % Halaman Pernyataan Orisinalitas
 	\input{chapters/publication} % Halaman Persetujuan Publikasi
 	\input{chapters/forewords} % Kata Pengantar
