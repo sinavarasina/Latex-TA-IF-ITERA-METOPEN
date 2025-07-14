@@ -1,7 +1,7 @@
 # Latex-TA-IF-ITERA
 Template Latex Tugas Akhir untuk Program Studi Teknik Informatika, ITERA
 
-Editor: Radhinka Bagaskara, Martin C.T. Manullang, I Wayan Wiprayoga Wisesa, Ardoni Yeriko Rifana Gultom (IF 2021)
+Kontributor: Radhinka Bagaskara, Martin C.T. Manullang, I Wayan Wiprayoga Wisesa, Jose Alfredo Sitanggang (IF 2016), Ardoni Yeriko Rifana Gultom (IF 2021), Syabana Minggus Noviantosa (IF 2018), Rizki Alfaina (IF 2021)
 
 ![Screenshot LaTex dari TeXstudio](ss.jpg)
 
