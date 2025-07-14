@@ -1,14 +1,10 @@
 \newpage
 \chapter{HASIL DAN PEMBAHASAN} \label{Bab IV}
 
-\section{Penggunaan Dataset} \label{IV.Penggunaan}
-Dataset yang digunakan pada penelitian ini merupakan dataset PURE. 
-\lipsum[1-2] % Menampilkan paragraf 1 sampai 2 dari lorem ipsum
+\section{Hasil Penelitian} \label{IV.Hasil}
+Berisi hasil penelitian berdasarkan rancangan yang sudah dijelaskan pada Bab \ref{Bab III}, terutama dari Subbab \ref{III.Metode}. Bagi yang membuat alat, jelaskan alat yang jadi dalam bentuk apa. Bagi yang membuat aplikasi, jelaskan aplikasi yang jadi dalam bentuk seperti apa. Jabarkan dalam bentuk pseudocode dan dijelaskan per bagian kodenya. Gunakan gambar dan tabel sebagai alat bantu menjelaskan hasil. \par
 
-
-\section{Akuisisi Gambar} \label{IV.Akuisisi}
-Pada tahap ini, proses pembacaan dataset dilakukan dengan seksama untuk memastikan setiap gambar diperoleh dengan urutan yang benar dan sistematis. Penting untuk memastikan bahwa gambar yang diperoleh terurut dalam format \textit{time-series} agar memudahkan analisis pergerakan wajah yang terjadi dalam video. Implementasi kode yang digunakan untuk proses ini dapat dilihat pada \cref{code:4.contoh}. \par
-
+Contoh implementasi kode dapat ditulis menggunakan \verb|\begin{lstlisting}|. Contoh kode dapat dilihat pada Kode \ref{code:4.contoh}. \par
 % Menulis blok kode
 \begin{lstlisting}[caption={Akuisisi Gambar}, label={code:4.contoh}]
 def process_dataset(dataset_path):
@@ -22,13 +18,59 @@ def process_dataset(dataset_path):
 		cv2.imshow('Frame', frame)
 		if cv2.waitKey(1) & 0xFF == ord('q'):
 			break
-		cv2.destroyAllWindows()
+	cv2.destroyAllWindows()
 def main():
-    datasets = get_all_dataset_folders(DATASET_ROOT)
-    for dataset in datasets:
-        process_dataset(dataset)
-        print("print string")
+	datasets = get_all_dataset_folders(DATASET_ROOT)
+	for dataset in datasets:
+		process_dataset(dataset)
+		print("print string")
 \end{lstlisting}
+
+\section{Penggunaan Dataset} \label{IV.Penggunaan}
+Dataset yang digunakan pada penelitian ini merupakan dataset PURE. 
+\lipsum[1-2] % Menampilkan paragraf 1 sampai 2 dari lorem ipsum
+
+\begin{longtable}{|c|c|c|c|c|c|c|c|c|}
+	\caption{Data \textit{dummy} Pengujian}
+	\label{table:3.dummy}\\
+	\hline
+	\multirow{2}{*}{\textbf{Subjek}} & \multicolumn{7}{|c|}{\textbf{Hasil Prediksi (BPM)}} & \multirow{2}{*}{\textbf{GT}} \\ \cline{2-8}
+	& \textbf{F} & \textbf{NA} & \textbf{NO} & \textbf{RC} & \textbf{LC} & \textbf{M} & \textbf{C} & \\ 
+	\hline
+	\endfirsthead
+	\hline
+	\multirow{2}{*}{\textbf{Subjek}} & \multicolumn{7}{|c|}{\textbf{Hasil Prediksi (BPM)}} & \multirow{2}{*}{\textbf{GT}} \\ \cline{2-8}
+	& \textbf{F} & \textbf{NA} & \textbf{NO} & \textbf{RC} & \textbf{LC} & \textbf{M} & \textbf{C} & \\ 
+	\hline
+	\endhead
+	\hline
+	\endfoot
+	\hline
+	\endlastfoot
+	1 & 68 & 69 & 68 & 70 & 68 & 71 & 69 & 68 \\ 
+	\hline
+	2 & 69 & 69 & 68 & 70 & 68 & 71 & 69 & 69 \\
+	\hline
+	3 & 70 & 70 & 69 & 71 & 68 & 73 & 69 & 70\\
+	\hline
+	4 & 71 & 70 & 70 & 72 & 69 & 73 & 70 & 71 \\
+	\hline
+	5 & 72 & 72 & 70 & 72 & 70 & 74 & 70 & 72 \\
+	\hline
+	6 & 73 & 72 & 71 & 74 & 71 & 76 & 71 & 73 \\ 
+	\hline
+	7 & 74 & 73 & 72 & 74 & 72 & 77 & 71 & 74 \\
+	\hline
+	8 & 75 & 74 & 72 & 74 & 73 & 77 & 73 & 75\\
+	\hline
+	9 & 76 & 75 & 73 & 75 & 74 & 78 & 75 & 76 \\
+	\hline
+	10 & 77 & 76 & 74 & 78 & 75 & 78 & 76 & 77
+\end{longtable}
+
+
+\section{Akuisisi Gambar} \label{IV.Akuisisi}
+Pada tahap ini, proses pembacaan dataset dilakukan dengan seksama untuk memastikan setiap gambar diperoleh dengan urutan yang benar dan sistematis. Penting untuk memastikan bahwa gambar yang diperoleh terurut dalam format \textit{time-series} agar memudahkan analisis pergerakan wajah yang terjadi dalam video. 
 
 
 \section{Analisis Hasil Penelitian} \label{IV.Analisis}
