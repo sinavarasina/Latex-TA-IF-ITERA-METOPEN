@@ -2,8 +2,8 @@
 %--------------------------------------------------------------------%
 %
 % Template TA LaTeX Teknik Informatika ITERA.
-% Editor: Radhinka Bagaskara, Martin C.T. Manullang, I Wayan Wiprayoga Wisesa, Ardoni Yeriko Rifana Gultom (IF 2021)
-% Version 2025.1
+% Editor: Radhinka Bagaskara, Martin C.T. Manullang, I Wayan Wiprayoga Wisesa, Jose Alfredo Sitanggang (IF 2016), Ardoni Yeriko Rifana Gultom (IF 2021)
+% Version 2025.4
 % TELAH DISESUAIKAN DENGAN FORMAT PERPUSTAKAAN ITERA MEI 2025 (UNESCO FORMAT)
 %
 % Berdasarkan "Templat LaTeX Tesis Informatika ITB" oleh Petra Barus & Peb Ruswono Aryan
@@ -20,7 +20,7 @@
 \documentclass[article]{report} % Untuk versi perpustakaan
 \usepackage[paperwidth=155mm,paperheight=230mm,top=2cm, bottom=2cm, left=2cm, right=2cm, includefoot, heightrounded, bindingoffset=0.5cm]{geometry} % Setting layout kertas UNESCO (155 x 230 mm)
 
-\input{config/config.sty}
+\input{config/config.sty} % Import semua konfigurasi laporan
 
 \bibliography{references}
 
@@ -33,88 +33,87 @@
     % Konfigurasi Informasi Tugas Akhir
     %----------------------------------------------------------------%
     
-    % Judul Tugas Akhir
-    \title{Analisis Algoritma ABC Untuk Pemecahan Masalah Penjadwalan Job Shop} % Judul Tugas Akhir dalam Bahasa Indonesia	
+    % Judul Tugas Akhir, dalam Bahasa Indonesia	
+    \title{Judul Tugas Akhir Dengan Metode ABC (Studi Kasus: XYZ)}
+    % Judul Tugas Akhir dalam Bahasa Inggris
+    \titleEN{Thesis Title With ABC Method (Case Study: XYZ)}
     % DITULIS DALAM HURUF KAPITAL; Font size 16 pt; Bold; Tidak melebihi 4 baris
-    \titleEN{Comparison }      % Judul Tugas Akhir dalam Bahasa Inggris
     
     % Informasi Mahasiswa
-    \author{Ardoni Yeriko Rifana Gultom}		% Nama Mahasiswa
-	\nim{121140141}			% NIM Mahasiswa
+    \author{Nama Mahasiswa}		% Nama Mahasiswa
+	\nim{123123123}				% NIM Mahasiswa
 	
 	%Informasi Dosen Pembimbing
 	\dosbingA%
-		{Martin Clinton Tosima Manullang, Ph.D.}%	% Nama Dosen Pembimbing 1
-		{NIP. 19930109 2019 03 1 017}				% NIP Dosen Pembimbing 1
+		{Dosen Pembimbing I}%			% Nama Dosen Pembimbing 1
+		{NIP. 19900000 2000 00 0 000}	% NIP Dosen Pembimbing 1
 	\dosbingB%
-		{Nama dan Gelar Pembimbing II}%	% Nama Dosen Pembimbing 2
-		{NIP. 123456789}				% NIP Dosen Pembimbing 2
+		{Dosen Pembimbing II}%			% Nama Dosen Pembimbing 2
+		{NIP. 19900000 2000 00 0 000}	% NIP Dosen Pembimbing 2
 		
 	%Informasi Dosen Penguji
 	\pengujiA%
-		{Andika Setiawan, S.Kom., M.Cs.}%	% Nama Dosen Penguji 1
-		{NIP. 19911127 2022 03 1 007}				% NIP Dosen Penguji 1
+		{Dosen Penguji I}%				% Nama Dosen Penguji 1
+		{NIP. 19900000 2000 00 0 000}	% NIP Dosen Penguji 1
 	\pengujiB%
-		{Eko Dwi Nugroho, S.Kom., M.Cs.}%	% Nama Dosen Penguji 2
-		{NIP. 19910209 2024 06 1 001}				% NIP Dosen Penguji 2
+		{Dosen Penguji II}%				% Nama Dosen Penguji 2
+		{NIP. 19900000 2000 00 0 000}	% NIP Dosen Penguji 2
 
 	\sloppy % mencegah text overflow. (Jose)
     \pagenumbering{roman}
     \setcounter{page}{1} % Nomor halaman dimulai dengan "ii" di hal. Pengesahan
 
-    \input{chapters/cover-hard} % Hardcover
-   \input{chapters/approval} % Lembar Pengesahan
-    % Ganti margin & aktifkan twoside mulai dari sini
-    \clearpage
-    % \newgeometry{
-    %     top=2cm,
-    %     bottom=2cm,
-    %     left=2cm,
-    %     right=2cm,
-    %     includefoot,
-    %     heightrounded,
-    %     bindingoffset=0.5cm,
-    %     twoside
-    % }
-    \pagestyle{alternatingstyle}
-   \input{chapters/statement} % Halaman Pernyataan Orisinalitas
-   \input{chapters/publication} % Halaman Persetujuan Publikasi
-   \input{chapters/forewords} % Kata Pengantar
+	\input{chapters/cover-hard} % Hardcover
+   	\input{chapters/approval} % Lembar Pengesahan
+    % Ganti margin & aktifkan twoside mulai dari sini 
+    % (RDB: Butuh klarifikasi)
+%    \clearpage
+%    % \newgeometry{
+%    %     top=2cm,
+%    %     bottom=2cm,
+%    %     left=2cm,
+%    %     right=2cm,
+%    %     includefoot,
+%    %     heightrounded,
+%    %     bindingoffset=0.5cm,
+%    %     twoside
+%    % }
+%    \pagestyle{alternatingstyle}
+	\input{chapters/statement} % Halaman Pernyataan Orisinalitas
+	\input{chapters/publication} % Halaman Persetujuan Publikasi
+	\input{chapters/forewords} % Kata Pengantar
+	\input{chapters/summary} % Ringkasan
+	\input{chapters/abstract-id} % Abstrak (Indonesia)
+   	\input{chapters/abstract-en} % Abstrak (Inggris)
     
-   \input{chapters/summary} % Ringkasan
-    \input{chapters/abstract-id} % Abstrak (Indonesia)
-    \input{chapters/abstract-en} % Abstrak (Inggris)
-%    \input{chapters/motto}
-%   \input{chapters/dedicated}
-
-    % Daftar Isi
-    \phantomsection% 
-    \addcontentsline{toc}{chapter}{DAFTAR ISI}
-    \tableofcontents
-    \pagebreak
-    % Daftar tabel
-    \phantomsection% 
-    \addcontentsline{toc}{chapter}{DAFTAR TABEL}
-    \listoftables
-    \pagebreak
-    % Daftar gambar
-    \phantomsection% 
-    \addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
-    \listoffigures
-    \pagebreak
-    % Daftar rumus
-    % \pagestyle{daftarrumusstyle}
-    \phantomsection% 
-    \addcontentsline{toc}{chapter}{DAFTAR RUMUS}
-    \listofmyequations
-    % \thispagestyle{daftarrumusstyle}
-    % \pagebreak
-%    \input{chapters/symbols}
-    % Daftar kode
-    \phantomsection% 
-    \addcontentsline{toc}{chapter}{DAFTAR KODE}
-    \lstlistoflistings
-    \pagebreak
+	% Daftar Isi
+	\phantomsection% 
+	\addcontentsline{toc}{chapter}{DAFTAR ISI}
+	\tableofcontents
+	\pagebreak
+	% Daftar tabel
+	\phantomsection% 
+	\addcontentsline{toc}{chapter}{DAFTAR TABEL}
+	\listoftables
+	\pagebreak
+	% Daftar gambar
+	\phantomsection% 
+	\addcontentsline{toc}{chapter}{DAFTAR GAMBAR}
+	\listoffigures
+	\pagebreak
+	% Daftar rumus
+	% \pagestyle{daftarrumusstyle}
+	\phantomsection% 
+	\addcontentsline{toc}{chapter}{DAFTAR RUMUS}
+	\listofmyequations
+	% \thispagestyle{daftarrumusstyle}
+	% \pagebreak
+	%    \input{chapters/symbols}
+	% Daftar kode
+	\phantomsection% 
+	\addcontentsline{toc}{chapter}{DAFTAR KODE}
+	\lstlistoflistings
+	\pagebreak
     
 
     %----------------------------------------------------------------%
