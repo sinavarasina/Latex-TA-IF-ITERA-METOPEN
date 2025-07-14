@@ -39,8 +39,13 @@
 % Setting indensasi
 \usepackage{indentfirst}
 \usepackage{parskip}
-\setlength{\parindent}{20pt}
+\usepackage[indentafter]{titlesec}
+\usepackage{microtype}
+%\setlength{\parindent}{20pt}
 \setlength{\parskip}{0pt}
+\newlength{\sectionindent}
+\settowidth{\sectionindent}{\thesection\hspace{0.965em}} % Agar indensasi paragraf selaras dengan indensasi judul subbab (Alfaina)
+\setlength{\parindent}{\sectionindent}
 
 % Linespacing 1.5. Tidak serupa dengan 1.5 di Word (RDB)
 \renewcommand{\baselinestretch}{1.5}
@@ -58,8 +63,6 @@
 
 % Format tanggal
 \usepackage[style=ddmmyyyy,datesep=-]{datetime2}
-
-
 
 % Format citation
 \usepackage[backend=bibtex,citestyle=ieee]{biblatex} % Untuk bisa jalan di Texstudio, harus backend=bibtex
@@ -81,11 +84,9 @@
 
 \DeclareLanguageMapping{bahasa}{english}
 
-
-
 % Package untuk link di daftar isi.
-\usepackage{titlesec}       % Package Format judul
-\usepackage{parskip}
+%\usepackage{titlesec}       % Package Format judul
+%\usepackage{parskip}
 \usepackage{ragged2e}		% Alignment
 \usepackage{multirow}		% Untuk bisa merge cell di tabel
 \usepackage{tikz}			% Untuk menggambar kotak pas foto
