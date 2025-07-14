@@ -279,27 +279,30 @@
 \usepackage{xcolor}
 \usepackage{geometry}
 
-% Pengaturan untuk listings
+% Pengaturan untuk penulisan blok kode (listings)
 \lstset{
-    language=Python,                  % Bahasa pemrograman
-    basicstyle=\ttfamily\footnotesize,        % Gaya font kode (diperkecil)
-    numbers=none,                      % Tidak menampilkan nomor baris
-    backgroundcolor=\color{white},     % Warna latar belakang
-    showstringspaces=false,            % Tidak menampilkan spasi dalam string
-    frame=single,                      % Membuat frame di sekitar kode
-    rulecolor=\color{black},           % Warna garis bingkai
-    breaklines=true,                   % Membungkus kode jika lebih panjang dari satu baris
-    breakatwhitespace=true,            % Membungkus di spasi
-    keepspaces=true,                   % Menjaga spasi di dalam kode
-    xleftmargin=10pt,                  % Margin kiri
-    xrightmargin=10pt,                 % Margin kanan
-    aboveskip=0pt,                    % Jarak di atas kode
-    belowskip=0pt,                    % Jarak di bawah kode
+    language=Python,                  	% Bahasa pemrograman
+    basicstyle=\ttfamily\scriptsize,	% Gaya font kode (diperkecil)
+    numbers=left,                      	% Menampilkan nomor baris di sisi kiri
+    numberstyle=\tiny\color{black},		% Warna nomor baris
+    showstringspaces=false,            	% Tidak menampilkan icon spasi dalam string
+    frame=single,                      	% Membuat frame di sekitar kode
+    rulecolor=\color{black},           	% Warna garis bingkai
+    breaklines=true,                   	% Membungkus kode jika lebih panjang dari satu baris
+    breakatwhitespace=true,           	% Membungkus di spasi
+    backgroundcolor=\color{white},    	% Warna latar belakang
+    commentstyle=\color{green}, 		% Warna untuk teks comment
+    keywordstyle=\color{blue}, 			% Warna untuk teks fungsi
+    stringstyle=\color{red},			% Warna untuk teks string
+    keepspaces=true,                   	% Menjaga spasi di dalam kode
+    xleftmargin=10pt,                 	% Margin kiri
+    xrightmargin=10pt,                 	% Margin kanan
+    aboveskip=0pt,                    	% Jarak di atas kode
+    belowskip=0pt,                    	% Jarak di bawah kode
     lineskip=-1pt,
-    extendedchars=true                 % Mengizinkan karakter non-ASCII
-    escapeinside={\%*}{*)}             % Escape karakter LaTeX dalam listings
+    extendedchars=true                 	% Mengizinkan karakter non-ASCII
+    escapeinside={\%*}{*)}            	% Escape karakter LaTeX dalam listings
 }
-
 
 % Daftar Kode
 \usepackage{tocloft}
