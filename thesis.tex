@@ -30,7 +30,6 @@
 			{geometry} 
 
 \input{config/config.sty} % Import konfigurasi laporan
-
 \bibliography{references.bib} % Import list Daftar Pustaka
 
 \begin{document}
@@ -46,7 +45,7 @@
     \title{Judul Tugas Akhir Dengan Metode ABC (Studi Kasus: XYZ)}
     % Judul Tugas Akhir dalam Bahasa Inggris
     \titleEN{Thesis Title With ABC Method (Case Study: XYZ)}
-    % DITULIS DALAM HURUF KAPITAL; Font size 16 pt; Bold; Tidak melebihi 4 baris
+    % JUDUL AKAN DITULIS DALAM HURUF KAPITAL; Font size 16 pt; Bold; Tidak melebihi 4 baris
     
     % Informasi Mahasiswa
     \author{Nama Mahasiswa}		% Nama Mahasiswa
@@ -75,11 +74,11 @@
 	%----------------------------------------------------------------%
 	% Konten Laporan
 	%----------------------------------------------------------------%
-	\input{chapters/cover-hard} % Hardcover
-   	\input{chapters/approval} % Lembar Pengesahan
+	\input{chapters/cover-hard} 	% Hardcover
+   	\input{chapters/approval} 		% Lembar Pengesahan
     %----------------------------------------------------------------%
     % Aktivasi twoside (agar ada margin gutter 0.5 cm) & nomor halaman selang-seling
-    % mulai dari sini (Ardoni)
+    % mulai dari setelah Lembar Pengesahan (Ardoni)
     \clearpage
 	\newgeometry{
 		top=2cm,
@@ -89,18 +88,19 @@
 		includefoot,
 		heightrounded,
 		bindingoffset=0.5cm,
-		twoside
+		twoside % Agar halaman diset akan bolak-balik
 	}
     \pagestyle{alternatingstyle}
     %----------------------------------------------------------------%
-    
-	\input{chapters/statement} % Halaman Pernyataan Orisinalitas
-	\input{chapters/publication} % Halaman Persetujuan Publikasi
-	\input{chapters/forewords} % Kata Pengantar
-	\input{chapters/summary} % Ringkasan
-	\input{chapters/abstract-id} % Abstrak (Indonesia)
-   	\input{chapters/abstract-en} % Abstrak (Inggris)
-    
+	\input{chapters/statement} 		% Halaman Pernyataan Orisinalitas
+	\input{chapters/publication} 	% Halaman Persetujuan Publikasi
+	\input{chapters/forewords} 		% Kata Pengantar
+	\input{chapters/summary} 		% Ringkasan
+	\input{chapters/abstract-id} 	% Abstrak (Indonesia)
+   	\input{chapters/abstract-en} 	% Abstrak (Inggris)    
+    %----------------------------------------------------------------%
+    % Halaman Daftar
+    %----------------------------------------------------------------%    
 	% Daftar Isi
 	\phantomsection% 
 	\addcontentsline{toc}{chapter}{DAFTAR ISI}
@@ -129,7 +129,6 @@
 	\addcontentsline{toc}{chapter}{DAFTAR KODE}
 	\lstlistoflistings
 	\pagebreak
-    
     %----------------------------------------------------------------%
     % Konfigurasi Bab
     %----------------------------------------------------------------%
@@ -138,7 +137,6 @@
     \renewcommand{\thechapter}{\Roman{chapter}}
     % Sub-bab: Roman
     \renewcommand\thesection{\arabic{chapter}.\arabic{section}}
-    
     % Setting supaya nomor halaman pertama dengan "chapter"
     % berada di tengah bawah, tapi selanjut2nya di kanan atas
     \fancypagestyle{plain}{%
@@ -149,9 +147,7 @@
     }
     % Reset penomoran halaman menjadi 1
     \setcounter{page}{1}
-    \pagenumbering{arabic}
-    
-    %----------------------------------------------------------------%
+    \pagenumbering{arabic}    
     %----------------------------------------------------------------%
     % Daftar Bab
     % Untuk menambahkan daftar bab, buat berkas bab misalnya `chapter-6` di direktori `chapters`, dan masukkan ke sini.
@@ -167,16 +163,15 @@
     \input{chapters/chapter-3}
     \input{chapters/chapter-4}
     \input{chapters/chapter-5}
-    %----------------------------------------------------------------%
-
 	%----------------------------------------------------------------%
     % Daftar Pustaka
     \newpage
     \phantomsection% 
     \addcontentsline{toc}{chapter}{DAFTAR PUSTAKA}
     \printbibliography[title={Daftar Pustaka}]
-
+	%----------------------------------------------------------------%
     % Lampiran
+    %----------------------------------------------------------------%
     % TODO: Tabel Lampiran
     \newpage
     \appendix
@@ -184,5 +179,5 @@
     \chapter*{Lampiran}
     \renewcommand\thesection{\Alph{section}}
     \input{chapters/appendix}
-
+    %----------------------------------------------------------------%
 \end{document}
