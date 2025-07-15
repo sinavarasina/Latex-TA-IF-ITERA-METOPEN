@@ -235,8 +235,6 @@
 \setlength{\cftmyequationsindent}{1.5em} % Menambahkan indentasi daftar rumus
 \renewcommand{\cftmyequationsleader}{\dotfill}
 
-\usepackage{etoolbox}
-
 % Setting penulisan rumus yang baru
 \newenvironment{equationcaptioned}[3][]{%
   \refstepcounter{equation}
@@ -307,7 +305,6 @@
 \renewcommand{\lstlistingname}{Kode}
 \renewcommand{\lstlistlistingname}{\listoflistingscaption}
 
-
 % Menentukan format penomoran untuk listings dengan angka Arab
 \makeatletter
 \renewcommand{\thelstnumber}{\@arabic\c@lstnumber}
@@ -344,7 +341,6 @@
 \renewcommand\@dotsep{2.5}  % Coba nilai yang berbeda: 1.5, 2.0, 2.5, 3.0, dll.
 \makeatother
 
-
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -359,7 +355,6 @@
 \crefname{kode}{Kode}{Kode}
 \Crefname{kode}{Kode}{Kode}
 \newcommand{\coderef}[1]{Kode~\ref{#1}}
-
 
 % Untuk mengganti nama bulan di babel bahasa
 % tapi belum jalan (RDB)

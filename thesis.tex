@@ -18,11 +18,20 @@
 
 % Set jenis dokumen Tugas Akhir
 \documentclass[article]{report} % Untuk versi perpustakaan
-\usepackage[paperwidth=155mm,paperheight=230mm,top=2cm, bottom=2cm, left=2cm, right=2cm, includefoot, heightrounded, bindingoffset=0.5cm]{geometry} % Setting layout kertas UNESCO (155 x 230 mm)
+\usepackage[paperwidth=155mm, % Setting layout kertas UNESCO (155 x 230 mm)
+			paperheight=230mm,
+			top=2cm, 
+			bottom=2cm, 
+			left=2cm,
+			right=2cm, 
+			includefoot, 
+			heightrounded, 
+			bindingoffset=0.5cm]
+			{geometry} 
 
-\input{config/config.sty} % Import semua konfigurasi laporan
+\input{config/config.sty} % Import konfigurasi laporan
 
-\bibliography{references}
+\bibliography{references.bib} % Import list Daftar Pustaka
 
 \begin{document}
 % 	\pagestyle{plain}
@@ -63,10 +72,14 @@
     \pagenumbering{roman}
     \setcounter{page}{1} % Nomor halaman dimulai dengan "ii" di hal. Pengesahan
 
+	%----------------------------------------------------------------%
+	% Konten Laporan
+	%----------------------------------------------------------------%
 	\input{chapters/cover-hard} % Hardcover
    	\input{chapters/approval} % Lembar Pengesahan
-    
-    % Ganti margin & aktifkan twoside mulai dari sini (Ardoni)
+    %----------------------------------------------------------------%
+    % Aktivasi twoside (agar ada margin gutter 0.5 cm) & nomor halaman selang-seling
+    % mulai dari sini (Ardoni)
     \clearpage
 	\newgeometry{
 		top=2cm,
@@ -79,6 +92,8 @@
 		twoside
 	}
     \pagestyle{alternatingstyle}
+    %----------------------------------------------------------------%
+    
 	\input{chapters/statement} % Halaman Pernyataan Orisinalitas
 	\input{chapters/publication} % Halaman Persetujuan Publikasi
 	\input{chapters/forewords} % Kata Pengantar
@@ -115,7 +130,6 @@
 	\lstlistoflistings
 	\pagebreak
     
-
     %----------------------------------------------------------------%
     % Konfigurasi Bab
     %----------------------------------------------------------------%
@@ -147,6 +161,7 @@
     \forceoddpage
     \cleardoublepage
     \pagestyle{alternatingstyle}
+    %----------------------------------------------------------------%
     \input{chapters/chapter-1}
     \input{chapters/chapter-2}
     \input{chapters/chapter-3}
@@ -154,6 +169,7 @@
     \input{chapters/chapter-5}
     %----------------------------------------------------------------%
 
+	%----------------------------------------------------------------%
     % Daftar Pustaka
     \newpage
     \phantomsection% 
