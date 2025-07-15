@@ -10,6 +10,7 @@
 % https://github.com/petrabarus/if-itb-latex
 % Berdasarkan Panduan Tugas Akhir Teknik Informatika ITERA v1.3
 % https://docs.google.com/document/d/1SYtSpRevbRvscXIJRAxuT41kJqqzsHyw/edit?usp=sharing&ouid=103935211052656359121&rtpof=true&sd=true 
+%
 %--------------------------------------------------------------------%
 %
 % Berkas ini berisi struktur utama dokumen LaTeX yang akan dibuat.
@@ -33,9 +34,6 @@
 \bibliography{references.bib} % Import list Daftar Pustaka
 
 \begin{document}
-% 	\pagestyle{plain}
-% 	\fancyhf{}
-% 	\rfoot{Halaman \thepage}%
 
     %----------------------------------------------------------------%
     % Konfigurasi Informasi Tugas Akhir
@@ -48,7 +46,7 @@
     % JUDUL AKAN DITULIS DALAM HURUF KAPITAL; Font size 16 pt; Bold; Tidak melebihi 4 baris
     
     % Informasi Mahasiswa
-    \author{Nama Mahasiswa}		% Nama Mahasiswa
+	\author{Nama Mahasiswa}		% Nama Mahasiswa
 	\nim{123123123}				% NIM Mahasiswa
 	
 	%Informasi Dosen Pembimbing
@@ -75,7 +73,7 @@
 	% Konten Laporan
 	%----------------------------------------------------------------%
 	\input{chapters/cover-hard} 	% Hardcover
-   	\input{chapters/approval} 		% Lembar Pengesahan
+	\input{chapters/approval} 		% Lembar Pengesahan
     %----------------------------------------------------------------%
     % Aktivasi twoside (agar ada margin gutter 0.5 cm) & nomor halaman selang-seling
     % mulai dari setelah Lembar Pengesahan (Ardoni)
@@ -97,7 +95,7 @@
 	\input{chapters/forewords} 		% Kata Pengantar
 	\input{chapters/summary} 		% Ringkasan
 	\input{chapters/abstract-id} 	% Abstrak (Indonesia)
-   	\input{chapters/abstract-en} 	% Abstrak (Inggris)    
+	\input{chapters/abstract-en} 	% Abstrak (Inggris)    
     %----------------------------------------------------------------%
     % Halaman Daftar
     %----------------------------------------------------------------%    
