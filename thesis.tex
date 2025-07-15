@@ -145,15 +145,14 @@
     % Reset penomoran halaman menjadi 1
     \setcounter{page}{1}
     \pagenumbering{arabic}    
-    %----------------------------------------------------------------%
-    % Daftar Bab
-    % Untuk menambahkan daftar bab, buat berkas bab misalnya `chapter-6` di direktori `chapters`, dan masukkan ke sini.
-    %----------------------------------------------------------------%
     \justifying
-     % Mulai selang-seling halaman
+    % Mulai selang-seling halaman
     \forceoddpage
     \cleardoublepage
     \pagestyle{alternatingstyle}
+    %----------------------------------------------------------------%
+    % Daftar Bab
+    % Untuk menambahkan daftar bab, buat berkas bab misalnya `chapter-6` di direktori `chapters`, dan masukkan ke sini.
     %----------------------------------------------------------------%
     \input{chapters/chapter-1}
     \input{chapters/chapter-2}
