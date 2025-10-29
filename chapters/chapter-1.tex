@@ -2,67 +2,67 @@
 \chapter{PENDAHULUAN} \label{Bab I}
 
 \section{Latar Belakang} \label{I.Latar Belakang}
-Latar Belakang berisi dasar pemikiran, kebutuhan atau alasan yang menjadi ide dari topik tugas akhir. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Terdapat dua hal yang wajib dikemukakan: \par
+Perkembangan sistem operasi modern, khususnya berbasis Linux, mendorong kebutuhan akan lingkungan desktop (\textit{desktop environment}) yang lebih efisien, modular, dan dapat beradaptasi dengan teknologi grafis baru seperti Wayland. Wayland merupakan protokol komunikasi antara \textit{compositor} dan aplikasi klien yang menggantikan X11 sebagai standar tampilan modern. Dengan desain yang sederhana, efisien, dan berbasis objek pada tataran protokol, Wayland memberi ruang bagi pengembang untuk membangun sistem tampilan dengan latensi rendah dan arsitektur modular. \par
 
-\begin{enumerate}[noitemsep]
-	\item Deskripsi yang luas dan longgar yang berkaitan dengan bidang/masalah di masyarakat, industry dan atau bidang-bidang lainnya. Deskripsi ini mewakili bidang/masalah secara umum yang berkaitan dengan Teknik Informatika, bekerja dan akan terlibat di dalamnya. Sangat disarankan di sini, sebisa mungkin tidak ada Batasan tentang pilihan teknologi yang akan digunakan. Contoh: bidang transportasi, bidang telekomunikasi, bidang Pendidikan, bidang manufaktur, bidang renewable energi, pariwisata, militer, transportasi, kesehatan, pertanian, pengelolaan infrastruktur dan sebagainya.
-	\item Deskripsi lebih khusus dan mendetail yang didapatkan dari poin 1 di atas. Dari deskripsi umum di atas, selanjutkan fokuskan pada fenomena masalah yang akan diangkat. Pendetailan harus mampu membawa masalah kepada masalah yang mennjukkan peran Anda dalam penelitian 
-\end{enumerate}
+Dalam praktiknya, ekosistem \textit{desktop environment} arus utama masih bertumpu pada kerangka berparadigma objek atau modular tradisional. GNOME (Mutter/GTK) menggunakan \textit{GObject} sebagai sistem objek di C, KDE Plasma/KWin berbasis Qt (QObject dan \textit{signals/slots}), sedangkan di ranah kompositor Wayland, Sway memanfaatkan \textit{wlroots} (pustaka modular di C). Hyprland ditulis dalam C++ mengintegrasikan Aquamarine sebagai \textit{rendering backend}. Pendekatan tersebut efektif dan matang, namun umumnya belum mengadopsi arsitektur \textit{Entity-Component-System} (ECS). \par
+
+Di sisi lain, paradigma \textit{Data-Oriented Design} (DOD) yang diimplementasikan melalui arsitektur ECS menawarkan penataan data yang lebih bersahabat terhadap \textit{cache} dan paralelisasi, sehingga berpotensi meningkatkan efisiensi jalur eksekusi kritis (misalnya manajemen jendela, komposisi frame, dan penanganan input). Pendekatan ini telah terbukti efektif dalam dunia \textit{game engine} (misal Unity/Bevy), tetapi penerapannya pada sistem \textit{desktop environment} dan kompositor Wayland masih terbatas. \par
+
+Wayland sebagai protokol tidak mengikat arsitektur internal kompositor; karena itu, terdapat peluang penelitian untuk merancang dan mengimplementasikan sebuah \textit{framework} \textit{desktop environment} berbasis ECS di atas Wayland. Framework semacam ini ditujukan untuk mengelola entitas seperti jendela/surface, perangkat input, dan objek render secara efisien, sekaligus menjaga modularitas agar mudah diperluas. Dengan demikian, penelitian ini memposisikan ECS/DOD bukan sebagai klaim pengganti OOP secara umum, melainkan sebagai eksplorasi arsitektur alternatif pada domain \textit{desktop environment} modern. \par
 
 \section{Rumusan Masalah} \label{I.Rumusan Masalah}
-Merumuskan masalah secara konkrit, bentuk pertanyaan fakta / kebenaran yang masih dipertanyakan \par
-
-Dari pendahuluan di atas, mahasiswa diharapkan dapat memformulasikan masalah engineering yang solid. Masalah yang kemudian akan diformulasi mahasiswa harus terdefinisi dengan baik (harus jelas, tidak ambigu/ada makna ganda, tanpa menggunakan jargon), masalah harus real (benar-benar ada masalah terebut) sehingga nantinya akan ada solusi yang konkrit. Perlu dipertimbangkan juga masalah tersebut harus bisa dipecahkan dalam waktu maksimal 1 semester oleh mahasiswa dengan alokasi waktu per minggu tidak lebih dari 20 jam per minggu. \par
-
-Lebih jelasnya masalah yang diharapkan adalah seperti dalam 3 poin di bawah ini. Jika tidak mengandung semua unsur dibawah maka tugas akhir ini tidak memenuhi syarat sebagai tugas akhir. \par
-
+Berdasarkan latar belakang tersebut, maka rumusan masalah dalam penelitian ini adalah sebagai berikut: \par
 \begin{enumerate}[noitemsep]
-	\item Harus ada proses perancangan yang utuh dari penentuan masalah real yang perlu dipecahkan, 
-	\item Harus menjelaskan spesifikasi yang akan dibuat
-	\item Harus ada implementasi dalam bentuk salah satu di bawah ini:
-	\begin{enumerate}
-		\item Hardware/perangkat keras
-		\item Software/perangkat lunak
-		\item Proses/simulasi yang dibuat sendiri (Matlab, C/C++, Python, dan lain-lain) bukan melalui software yang murni dan sudah paten dan tinggal memasukkan data (ETAP, EDSA, SPSS, dan lain-lain)
-	\end{enumerate}
+    \item Bagaimana merancang arsitektur \textit{framework} \textit{desktop environment} berbasis \textit{Entity-Component-System} (ECS) yang dapat beroperasi di atas protokol Wayland? 
+    \item Bagaimana mengimplementasikan \textit{framework} tersebut sehingga mampu mengelola entitas sistem seperti jendela/surface, input, dan rendering secara efisien? 
+    \item Bagaimana mengevaluasi performa dan efisiensi \textit{framework} yang dirancang terhadap pemanfaatan sumber daya sistem (memori, latensi input, dan waktu render)? 
 \end{enumerate}
-
-Hasil rancangan dalam bentuk hardware/software/simulasi tersebut harus diuji dan diverifikasi apakah bekerja dengan baik atau belum Jika belum bekerja baik, mahasiswa harus bisa menjelaskan alasannya dan perbaikannya ke depan (walau pun saat tugas akhir ini selesai, alat/software/simulasi belum bisa bekerja).\par
-
-Selain itu, rumusan sangat disarankan untuk melibatkan pengalaman multidisiplin. Misalnya melibatkan unsur-unsur seperti seni, ekonomi, mekanik, politik, proses kimia, etika, kesehatan, dan sebagainya. Contoh-contoh rumusan masalah yang \textbf{tidak disarankan}: \par
-
-\begin{enumerate}[noitemsep]
-	\item \textbf{Masalah tidak real dan tidak terlalu hipotetis}. Misalnya, topik riset atau topik untuk lomba (contoh: mencari metode paling cepat untuk menentukan posisi kebakaran di dalam hutan).
-	\item Rumusan untuk membuat alat/produk yang \textbf{tidak dapat diimplemetasikan dan diukur/diuji dalam waktu maksimal 2 semester}. Misalnya membuat roket dengan daya jangkau 500 km.
-	\item \textbf{Solusi terlalu kompleks} sehingga dalam satu tahun hanya dapat menghasilkan bagian kecil dari solusi yang diharapkan Rumusan masalah berisi ringkasan fenomena dan masalah.
-\end{enumerate}
-
-Rumusan masalah akan dijawab di \nameref{V.Kesimpulan}. Rumusan Masalah disarankan untuk ditulis per poin.
+\par
 
 \section{Tujuan Penelitian} \label{I.Tujuan}
-Tujuan diisikan tujuan dari penelitian yang dilakukan, berdasarkan sub-bab \nameref{I.Latar Belakang} dan \nameref{I.Rumusan Masalah} dilengkapi dengan spesifikasinya. Tuliskan Tujuan sesuai dengan poin Rumusan Masalah. \par
+Tujuan dari penelitian ini adalah sebagai berikut: \par
+\begin{enumerate}[noitemsep]
+    \item Merancang arsitektur \textit{framework} \textit{desktop environment} berbasis \textit{Entity-Component-System} (ECS) di atas protokol Wayland. 
+    \item Mengimplementasikan prototipe \textit{framework} yang mendukung pengelolaan entitas utama seperti jendela/surface, perangkat input, dan sistem rendering. 
+    \item Melakukan pengujian performa untuk menganalisis efisiensi dan pemanfaatan sumber daya \textit{framework} yang dikembangkan (memori, latensi input, dan waktu render). 
+\end{enumerate}
+\par
 
 \section{Batasan Masalah} \label{I.Batasan}
-Batasan yang dimaksud disini ialah batasan dari penelitian tugas akhir yang dilakukan. Batasan masalah ditujukan agar tugas akhir yang dilakukan tidak terlalu luas, dan menjadi lebih realistis untuk diselesaikan. \par
+Untuk menjaga ruang lingkup penelitian agar tetap terfokus dan realistis, penelitian ini dibatasi oleh hal-hal berikut: \par
+\begin{enumerate}[noitemsep]
+    \item \textit{Framework} yang dikembangkan berfokus pada arsitektur dasar \textit{desktop environment}, meliputi manajemen jendela/surface, input, dan rendering, tanpa implementasi penuh fitur desktop seperti panel, \textit{launcher}, atau \textit{file manager}. 
+    \item Penelitian ini hanya menggunakan Wayland sebagai \textit{backend} tampilan utama, tanpa dukungan terhadap X11 atau kompositor lain. 
+    \item Bahasa pemrograman yang digunakan adalah C++ dengan memanfaatkan pustaka Wayland (\textit{libwayland-server}) dan pustaka grafis OpenGL/Vulkan secara langsung. 
+    \item Pengujian performa difokuskan pada efisiensi memori, waktu render, dan tingkat latensi input, bukan pada fitur antarmuka pengguna atau pengalaman pengguna secara keseluruhan. 
+\end{enumerate}
+\par
+Framework ini dapat dikembangkan lebih lanjut dengan integrasi modul \textit{XWayland} untuk kompatibilitas aplikasi berbasis X11, sebagai pengembangan lanjutan di luar lingkup penelitian ini. \par
 
 \section{Manfaat Penelitian} \label{I.Manfaat}
-Manfaat tugas akhir yang dilakukan didefinisikan sebagai manfaat yang diperoleh ketika tugas akhir telah selesai dilakukan. Manfaat dapat berupa manfaat untuk: \textbf{mahasiswa, program studi teknik informatika, ITERA, masyarakat, dunia akademisi, dan dunia penelitian}. \par
-
+Penelitian ini diharapkan memberikan beberapa manfaat sebagai berikut: \par
+\begin{enumerate}[noitemsep]
+    \item \textbf{Bagi mahasiswa:} menambah pemahaman tentang penerapan arsitektur \textit{Data-Oriented Design} dan \textit{Entity-Component-System} dalam pengembangan sistem tingkat rendah. 
+    \item \textbf{Bagi program studi Teknik Informatika:} menyediakan referensi penelitian di bidang sistem operasi, grafika komputer, dan arsitektur perangkat lunak berbasis DOD/ECS. 
+    \item \textbf{Bagi dunia akademik dan penelitian:} memberikan kontribusi terhadap kajian pengembangan \textit{framework} grafis dan \textit{desktop environment} yang lebih efisien dan modular. 
+    \item \textbf{Bagi komunitas pengembang \textit{open-source}:} menyediakan landasan arsitektur alternatif yang dapat dikembangkan menjadi kompositor atau \textit{window manager} ringan berbasis Wayland. 
+\end{enumerate}
+\par
 
 \section{Sistematika Penulisan} \label{I.Sistematika}
-Sistematika penulisan berisi pembahasan apa yang akan ditulis disetiap Bab. Sistematika pada umumnya berupa paragraf yang setiap paragraf mencerminkan bahasan setiap Bab. \par
-
 \subsection*{Bab I}
-Bab ini berisikan penjelasan latar belakang dari topik penelitian yang berlangsung, rumusan masalah dari masalah yang dihadapi pada penjelasan di latar belakang, tujuan dari penelitian, batasan dari penelitian, manfaat dari hasil penelitian, dan sistematika penulisan tugas akhir. \par
+Bab ini berisikan penjelasan latar belakang penelitian, rumusan masalah, tujuan, batasan, manfaat penelitian, serta sistematika penulisan tugas akhir. \par
 
 \subsection*{Bab II}
-Bab ini membahas mengenai tinjauan pustaka dari penelitan terdahulu dan dasar teori yang berkaitan dengan penelitian ini.
+Bab ini membahas tinjauan pustaka dan dasar teori, termasuk konsep Wayland, kompositor, paradigma \textit{Entity-Component-System} (ECS) dan \textit{Data-Oriented Design} (DOD), serta penelitian terdahulu yang relevan. \par
 
 \subsection*{Bab III}
-Bab ini berisikan penjelasan alur kerja sistem, alat dan data yang digunakan, metode yang digunakan, dan rancangan pengujian.
+Bab ini menjelaskan metodologi penelitian, perancangan sistem, perangkat lunak dan pustaka yang digunakan, serta rancangan pengujian performa dan efisiensi \textit{framework}. \par
 
 \subsection*{Bab IV}
-Bab ini membahas hasil implementasi dan pengujian dari penelitian yang dilakukan, serta analisis dan evaluasi yang dapat dipetik dari hasil.
+Bab ini menyajikan hasil implementasi \textit{framework}, pengujian performa, analisis hasil, serta pembahasan mengenai efisiensi dan modularitas sistem yang dikembangkan. \par
 
 \subsection*{Bab V}
-Bab ini membahas kesimpulan dari hasil penelitian dan juga saran untuk penelitian selanjutnya.
+Bab ini berisi kesimpulan dari penelitian yang dilakukan serta saran untuk pengembangan lebih lanjut, seperti ekspansi fitur, optimalisasi rendering, dan integrasi dengan komponen \textit{desktop environment} lainnya. \par
+
+
